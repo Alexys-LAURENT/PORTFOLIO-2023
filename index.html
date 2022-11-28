@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Alexys LAURENT</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -32,16 +33,16 @@
     <div class="page2 page">
         <nav>
             <ul>
-                <li><a class="nav-a" href="">A PROPOS </a></li>
+                <li><a class="nav-a" href="#APROPOS">A PROPOS </a></li>
                 <li><a class="nav-a" href="">ALTERNANCE </a></li>
-                <li><a class="nav-a" href="">PROJETS </a></li>
-                <li><a class="nav-a" href="">VEILLE </a></li>
-                <li><a class="nav-a" href="">CONTACT </a></li>
+                <li><a class="nav-a" href="#PROJETS">PROJETS </a></li>
+                <li><a class="nav-a" href="#VEILLE">VEILLE </a></li>
+                <li><a class="nav-a right-item" href="#CONTACT">CONTACT </a></li>
             </ul>
         </nav>
         <div class="sous-page sous-page-apropos">
             <div data-aos="fade-right" data-aos-duration="1000" class="title apropos">
-                <h2>A PROPOS DE MOI</h2>
+                <h2 id="APROPOS">A PROPOS DE MOI</h2>
                 <hr>
             </div>
             <div class="apropos-container">
@@ -58,7 +59,7 @@
                                     </span>Bac Général <br> </p>
                             </div>
                         </div>
-                        <a href="">TÉLÉCHARGER MON CV</a>
+                        <a href="documents/CV-Alexys-LAURENT.pdf" target="_blank">TÉLÉCHARGER MON CV</a>
                     </div>
                     <div class="infos-texte">
                         <p>Je m’appelle Alexys LAURENT, j’ai 19 ans et je suis pationné d’informatique, du developpement
@@ -105,7 +106,7 @@
                 <h3 class="compétences">MES EXPÉRIENCES</h3>
             </div>
             <div class="timeline">
-                <hr>
+                <div class="line"></div>
                 <div id="DEBUT" aria-describedby="tooltip" class="dot dot0"></div>
                 <div id="BAC" aria-describedby="tooltip" class="dot dot1"></div>
                 <div id="IRIS" aria-describedby="tooltip" class="dot dot2"></div>
@@ -146,7 +147,7 @@
         </div>
         <div class="sous-page projets">
             <div data-aos="fade-right" data-aos-duration="1000" class="title apropos">
-                <h2>PROJETS</h2>
+                <h2 id="PROJETS">PROJETS</h2>
                 <hr>
             </div>
             <div class="projets-container">
@@ -161,63 +162,33 @@
                 <div id="projets-blocks-ecole" class="projets-blocks">
 
 
-                    <div data-aos="zoom-in" onclick="openProjet1Ecole()" class="block">
-                        <h3>École 1</h3>
+                    <div data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#ecole1" class="block">
+                        <h3>TP Garage</h3>
                     </div>
-                    <dialog id="projet-1-ecole">
-                        <h1>Projet 1 école</h1>
-                        <button onclick="closeProjet1Ecole()">Fermer</button>
-                    </dialog>
 
 
-                    <div data-aos="zoom-in" onclick="openProjet2Ecole()" class="block">
-                        <h3>École 2</h3>
+                    <div data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#ecole2" class="block">
+                        <h3>TP Scolarite</h3>
                     </div>
-                    <dialog id="projet-2-ecole">
-                        <h1>Projet 2 école</h1>
-                        <button onclick="closeProjet2Ecole()">Fermer</button>
-                    </dialog>
 
 
-                    <div data-aos="zoom-in" onclick="openProjet3Ecole()" class="block">
-                        <h3>École 3</h3>
+                    <div data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#ecole3" class="block">
+                        <h3>PPE</h3>
                     </div>
-                    <dialog id="projet-3-ecole">
-                        <h1>Projet 3 école</h1>
-                        <button onclick="closeProjet3Ecole()">Fermer</button>
-                    </dialog>
-
 
                 </div>
 
                 <div id="projets-blocks-entreprise" class="projets-blocks">
 
 
-                    <div data-aos="zoom-in" onclick="openProjet1Entreprise()" class="block">
-                        <h3>Entreprise 1</h3>
+                    <div data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#entreprise1" class="block">
+                        <h3>Tchilee v3</h3>
                     </div>
-                    <dialog id="projet-1-entreprise">
-                        <h1>Projet 1 entreprise</h1>
-                        <button onclick="closeProjet1Entreprise()">Fermer</button>
-                    </dialog>
 
 
-                    <div data-aos="zoom-in" onclick="openProjet2Entreprise()" class="block">
-                        <h3>Entreprise 2</h3>
+                    <div data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#entreprise2" class="block">
+                        <h3>SkillTouch</h3>
                     </div>
-                    <dialog id="projet-2-entreprise">
-                        <h1>Projet 2 entreprise</h1>
-                        <button onclick="closeProjet2Entreprise()">Fermer</button>
-                    </dialog>
-
-
-                    <div data-aos="zoom-in" onclick="openProjet3Entreprise()" class="block">
-                        <h3>Entreprise 3</h3>
-                    </div>
-                    <dialog id="projet-3-entreprise">
-                        <h1>Projet 3 entreprise</h1>
-                        <button onclick="closeProjet3Entreprise()">Fermer</button>
-                    </dialog>
 
 
                 </div>
@@ -225,31 +196,15 @@
                 <div id="projets-blocks-personnel" class="projets-blocks">
 
 
-                    <div data-aos="zoom-in" onclick="openProjet1Personnel()" class="block">
-                        <h3>Personnel 1</h3>
+                    <div data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#personnel1" class="block">
+                        <h3>Mon serveur web apache</h3>
                     </div>
-                    <dialog id="projet-1-personnel">
-                        <h1>Projet 1 personnel</h1>
-                        <button onclick="closeProjet1Personnel()">Fermer</button>
-                    </dialog>
 
 
-                    <div data-aos="zoom-in" onclick="openProjet2Personnel()" class="block">
-                        <h3>Personnel 2</h3>
+
+                    <div data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#personnel2" class="block">
+                        <h3>Bank Dashboard</h3>
                     </div>
-                    <dialog id="projet-2-personnel">
-                        <h1>Projet 2 personnel</h1>
-                        <button onclick="closeProjet2Personnel()">Fermer</button>
-                    </dialog>
-
-
-                    <div data-aos="zoom-in" onclick="openProjet3Personnel()" class="block">
-                        <h3>Personnel 3</h3>
-                    </div>
-                    <dialog id="projet-3-personnel">
-                        <h1>Projet 3 personnel</h1>
-                        <button onclick="closeProjet3Personnel()">Fermer</button>
-                    </dialog>
 
 
                 </div>
@@ -258,7 +213,7 @@
         </div>
         <div class="sous-page veille">
             <div data-aos="fade-right" data-aos-duration="1000" class="title">
-                <h2>VEILLE</h2>
+                <h2 id="VEILLE">VEILLE</h2>
                 <hr>
             </div>
             <div class="veille-container">
@@ -299,7 +254,7 @@
 
             <div class="sous-page contact">
                 <div data-aos="fade-right" data-aos-duration="1000" class="title">
-                    <h2>CONTACT</h2>
+                    <h2 id="CONTACT">CONTACT</h2>
                     <hr>
                 </div>
                 <div class="links">
@@ -336,6 +291,429 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--TOUS LES MODALS-->
+
+
+
+        <!-- Modal Ecole 1 -->
+        <div class="modal fade" id="ecole1" tabindex="-1" aria-labelledby="ecole1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="ecole1">TP garage</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-choix-container">
+                            <div onclick="showChoix1Ecole1Contenu()" id="modal-choix1-ecole1"
+                                class="modal-choix modal-choix1-g">
+                                <h3>Présentation</h3>
+                            </div>
+                            <div onclick="showChoix2Ecole1Contenu()" id="modal-choix2-ecole1" class="modal-choix">
+                                <h3>Techno utilisées</h3>
+                            </div>
+                            <div onclick="showChoix3Ecole1Contenu()" id="modal-choix3-ecole1" class="modal-choix">
+                                <h3>Comptétences acquises</h3>
+                            </div>
+                            <div onclick="showChoix4Ecole1Contenu()" id="modal-choix4-ecole1" class="modal-choix">
+                                <h3>Captures</h3>
+                            </div>
+                        </div>
+                        <div class="contenu-modal">
+                            <div id="modal-choix1-ecole1-contenu">
+                                <p>Présentation du projet école 1</p>
+                            </div>
+                            <div id="modal-choix2-ecole1-contenu" class="modal-choix-contenu-g">
+                                <p>Techno utilisées du projet école 1</p>
+                            </div>
+                            <div id="modal-choix3-ecole1-contenu" class="modal-choix-contenu-g">
+                                <p>Comptétences acquises du projet école 1</p>
+                            </div>
+                            <div id="modal-choix4-ecole1-contenu" class="modal-choix-contenu-g">
+                                <p>Captures du projet école 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Modal Ecole 2 -->
+        <div class="modal fade" id="ecole2" tabindex="-1" aria-labelledby="ecole2" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="ecole2">TP Scolarite</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-choix-container">
+                            <div onclick="showChoix1Ecole2Contenu()" id="modal-choix1-ecole2"
+                                class="modal-choix modal-choix1-g">
+                                <h3>Présentation</h3>
+                            </div>
+                            <div onclick="showChoix2Ecole2Contenu()" id="modal-choix2-ecole2" class="modal-choix">
+                                <h3>Techno utilisées</h3>
+                            </div>
+                            <div onclick="showChoix3Ecole2Contenu()" id="modal-choix3-ecole2" class="modal-choix">
+                                <h3>Comptétences acquises</h3>
+                            </div>
+                            <div onclick="showChoix4Ecole2Contenu()" id="modal-choix4-ecole2" class="modal-choix">
+                                <h3>Captures</h3>
+                            </div>
+                        </div>
+                        <div class="contenu-modal">
+                            <div id="modal-choix1-ecole2-contenu">
+                                <p>Présentation du projet école 2</p>
+                            </div>
+                            <div id="modal-choix2-ecole2-contenu" class="modal-choix-contenu-g">
+                                <p>Techno utilisées du projet école 2</p>
+                            </div>
+                            <div id="modal-choix3-ecole2-contenu" class="modal-choix-contenu-g">
+                                <p>Comptétences acquises du projet école 2</p>
+                            </div>
+                            <div id="modal-choix4-ecole2-contenu" class="modal-choix-contenu-g">
+                                <p>Captures du projet école 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Modal Ecole 3 -->
+        <div class="modal fade" id="ecole3" tabindex="-1" aria-labelledby="ecole3" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="ecole3">PPE</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-choix-container">
+                            <div onclick="showChoix1Ecole3Contenu()" id="modal-choix1-ecole3"
+                                class="modal-choix modal-choix1-g">
+                                <h3>Présentation</h3>
+                            </div>
+                            <div onclick="showChoix2Ecole3Contenu()" id="modal-choix2-ecole3" class="modal-choix">
+                                <h3>Techno utilisées</h3>
+                            </div>
+                            <div onclick="showChoix3Ecole3Contenu()" id="modal-choix3-ecole3" class="modal-choix">
+                                <h3>Comptétences acquises</h3>
+                            </div>
+                            <div onclick="showChoix4Ecole3Contenu()" id="modal-choix4-ecole3" class="modal-choix">
+                                <h3>Captures</h3>
+                            </div>
+                        </div>
+                        <div class="contenu-modal">
+                            <div id="modal-choix1-ecole3-contenu">
+                                <p>Présentation du projet école 3</p>
+                            </div>
+                            <div id="modal-choix2-ecole3-contenu" class="modal-choix-contenu-g">
+                                <p>Techno utilisées du projet école 3</p>
+                            </div>
+                            <div id="modal-choix3-ecole3-contenu" class="modal-choix-contenu-g">
+                                <p>Comptétences acquises du projet école 3</p>
+                            </div>
+                            <div id="modal-choix4-ecole3-contenu" class="modal-choix-contenu-g">
+                                <p>Captures du projet école 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Modal Entreprise 1 -->
+        <div class="modal fade" id="entreprise1" tabindex="-1" aria-labelledby="entreprise1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="entreprise1">Tchilee.fr v3</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-choix-container">
+                            <div onclick="showChoix1Entreprise1Contenu()" id="modal-choix1-entreprise1"
+                                class="modal-choix modal-choix1-g">
+                                <h3>Présentation</h3>
+                            </div>
+                            <div onclick="showChoix2Entreprise1Contenu()" id="modal-choix2-entreprise1"
+                                class="modal-choix">
+                                <h3>Techno utilisées</h3>
+                            </div>
+                            <div onclick="showChoix3Entreprise1Contenu()" id="modal-choix3-entreprise1"
+                                class="modal-choix">
+                                <h3>Comptétences acquises</h3>
+                            </div>
+                            <div onclick="showChoix4Entreprise1Contenu()" id="modal-choix4-entreprise1"
+                                class="modal-choix">
+                                <h3>Captures</h3>
+                            </div>
+                        </div>
+                        <div class="contenu-modal">
+                            <div id="modal-choix1-entreprise1-contenu">
+                                <p>Présentation du projet entreprise 1</p>
+                            </div>
+                            <div id="modal-choix2-entreprise1-contenu" class="modal-choix-contenu-g">
+                                <p>Techno utilisées du projet entreprise 1</p>
+                            </div>
+                            <div id="modal-choix3-entreprise1-contenu" class="modal-choix-contenu-g">
+                                <p>Comptétences acquises du projet entreprise 1</p>
+                            </div>
+                            <div id="modal-choix4-entreprise1-contenu" class="modal-choix-contenu-g">
+                                <p>Captures du projet entreprise 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Entreprise 2 -->
+        <div class="modal fade" id="entreprise2" tabindex="-1" aria-labelledby="entreprise2" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="entreprise2">Skill Touch</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-choix-container">
+                            <div onclick="showChoix1Entreprise2Contenu()" id="modal-choix1-entreprise2"
+                                class="modal-choix modal-choix1-g">
+                                <h3>Présentation</h3>
+                            </div>
+                            <div onclick="showChoix2Entreprise2Contenu()" id="modal-choix2-entreprise2"
+                                class="modal-choix">
+                                <h3>Techno utilisées</h3>
+                            </div>
+                            <div onclick="showChoix3Entreprise2Contenu()" id="modal-choix3-entreprise2"
+                                class="modal-choix">
+                                <h3>Comptétences acquises</h3>
+                            </div>
+                            <div onclick="showChoix4Entreprise2Contenu()" id="modal-choix4-entreprise2"
+                                class="modal-choix">
+                                <h3>Captures</h3>
+                            </div>
+                        </div>
+                        <div class="contenu-modal">
+                            <div id="modal-choix1-entreprise2-contenu">
+                                <p>Présentation du projet entreprise 2</p>
+                            </div>
+                            <div id="modal-choix2-entreprise2-contenu" class="modal-choix-contenu-g">
+                                <p>Techno utilisées du projet entreprise 2</p>
+                            </div>
+                            <div id="modal-choix3-entreprise2-contenu" class="modal-choix-contenu-g">
+                                <p>Comptétences acquises du projet entreprise 2</p>
+                            </div>
+                            <div id="modal-choix4-entreprise2-contenu" class="modal-choix-contenu-g">
+                                <p>Captures du projet entreprise 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Personnel 1 -->
+        <div class="modal fade" id="personnel1" tabindex="-1" aria-labelledby="personnel1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="personnel1">Mon serveur web apache</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-choix-container">
+                            <div onclick="showChoix1Personnel1Contenu()" id="modal-choix1-personnel1"
+                                class="modal-choix modal-choix1-g">
+                                <h3>Présentation</h3>
+                            </div>
+                            <div onclick="showChoix2Personnel1Contenu()" id="modal-choix2-personnel1"
+                                class="modal-choix">
+                                <h3>Techno utilisées</h3>
+                            </div>
+                            <div onclick="showChoix3Personnel1Contenu()" id="modal-choix3-personnel1"
+                                class="modal-choix">
+                                <h3>Comptétences acquises</h3>
+                            </div>
+                            <div onclick="showChoix4Personnel1Contenu()" id="modal-choix4-personnel1"
+                                class="modal-choix">
+                                <h3>Captures</h3>
+                            </div>
+                        </div>
+                        <div class="contenu-modal">
+                            <div id="modal-choix1-personnel1-contenu">
+                                <p>Présentation du projet personnel 1</p>
+                            </div>
+                            <div id="modal-choix2-personnel1-contenu" class="modal-choix-contenu-g">
+                                <p>Techno utilisées du projet personnel 1</p>
+                            </div>
+                            <div id="modal-choix3-personnel1-contenu" class="modal-choix-contenu-g">
+                                <p>Comptétences acquises du projet personnel 1</p>
+                            </div>
+                            <div id="modal-choix4-personnel1-contenu" class="modal-choix-contenu-g">
+                                <p>Captures du projet personnel 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Personnel 2 -->
+        <div class="modal fade" id="personnel2" tabindex="-1" aria-labelledby="personnel2" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="personnel2">Bank Dashboard</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-choix-container">
+                            <div onclick="showChoix1Personnel2Contenu()" id="modal-choix1-personnel2"
+                                class="modal-choix modal-choix1-g">
+                                <h3>Présentation</h3>
+                            </div>
+                            <div onclick="showChoix2Personnel2Contenu()" id="modal-choix2-personnel2"
+                                class="modal-choix">
+                                <h3>Techno utilisées</h3>
+                            </div>
+                            <div onclick="showChoix3Personnel2Contenu()" id="modal-choix3-personnel2"
+                                class="modal-choix">
+                                <h3>Comptétences acquises</h3>
+                            </div>
+                            <div onclick="showChoix4Personnel2Contenu()" id="modal-choix4-personnel2"
+                                class="modal-choix">
+                                <h3>Captures</h3>
+                            </div>
+                        </div>
+                        <div class="contenu-modal">
+                            <div id="modal-choix1-personnel2-contenu">
+                                <p>Présentation du projet personnel 2</p>
+                            </div>
+                            <div id="modal-choix2-personnel2-contenu" class="modal-choix-contenu-g">
+                                <p>Techno utilisées du projet personnel 2</p>
+                            </div>
+                            <div id="modal-choix3-personnel2-contenu" class="modal-choix-contenu-g">
+                                <p>Comptétences acquises du projet personnel 2</p>
+                            </div>
+                            <div id="modal-choix4-personnel2-contenu" class="modal-choix-contenu-g">
+                                <p>Captures du projet personnel 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+            integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+            crossorigin="anonymous"></script>
         <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
         <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

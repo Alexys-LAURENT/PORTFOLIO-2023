@@ -33,150 +33,418 @@ function showPersonnel() {
     boutonEntreprise.style.backgroundColor = 'transparent';
 }
 
-/////////////////////////MODAL ECOLE//////////////////////////////////////////
-function openProjet1Ecole() {
-    const projet1Ecole = document.getElementById('projet-1-ecole');
-    projet1Ecole.showModal();
-}
-function closeProjet1Ecole() {
-    const projet1Ecole = document.getElementById('projet-1-ecole');
-    projet1Ecole.close();
-}
-
-
-
-function openProjet2Ecole() {
-    const projet1Ecole = document.getElementById('projet-2-ecole');
-    projet1Ecole.showModal();
-}
-function closeProjet2Ecole() {
-    const projet2Ecole = document.getElementById('projet-2-ecole');
-    projet2Ecole.close();
-}
-
-
-
-
-function openProjet3Ecole() {
-    const projet1Ecole = document.getElementById('projet-3-ecole');
-    projet1Ecole.showModal();
-}
-function closeProjet3Ecole() {
-    const projet3Ecole = document.getElementById('projet-3-ecole');
-    projet3Ecole.close();
-}
-
-
-
-
-/////////////////////////MODAL ENTREPRISE//////////////////////////////////////////
-
-
-function openProjet1Entreprise() {
-    const projet1Entreprise = document.getElementById('projet-1-entreprise');
-    projet1Entreprise.showModal();
-}
-function closeProjet1Entreprise() {
-    const projet1Entreprise = document.getElementById('projet-1-entreprise');
-    projet1Entreprise.close();
-}
-
-
-
-function openProjet2Entreprise() {
-    const projet1Entreprise = document.getElementById('projet-2-entreprise');
-    projet1Entreprise.showModal();
-}
-function closeProjet2Entreprise() {
-    const projet2Entreprise = document.getElementById('projet-2-entreprise');
-    projet2Entreprise.close();
-}
-
-
-
-
-function openProjet3Entreprise() {
-    const projet1Entreprise = document.getElementById('projet-3-entreprise');
-    projet1Entreprise.showModal();
-}
-function closeProjet3Entreprise() {
-    const projet3Entreprise = document.getElementById('projet-3-entreprise');
-    projet3Entreprise.close();
-}
-
-
-
-
-/////////////////////////MODAL PERSONNEL//////////////////////////////////////////
-
-
-function openProjet1Personnel() {
-    const projet1Personnel = document.getElementById('projet-1-personnel');
-    projet1Personnel.showModal();
-}
-function closeProjet1Personnel() {
-    const projet1Personnel = document.getElementById('projet-1-personnel');
-    projet1Personnel.close();
-}
-
-
-
-function openProjet2Personnel() {
-    const projet1Personnel = document.getElementById('projet-2-personnel');
-    projet1Personnel.showModal();
-}
-function closeProjet2Personnel() {
-    const projet2Personnel = document.getElementById('projet-2-personnel');
-    projet2Personnel.close();
-}
-
-
-
-
-function openProjet3Personnel() {
-    const projet1Personnel = document.getElementById('projet-3-personnel');
-    projet1Personnel.showModal();
-}
-function closeProjet3Personnel() {
-    const projet3Personnel = document.getElementById('projet-3-personnel');
-    projet3Personnel.close();
-}
 
 
 
 
 
 
-/////////////////////////VEILLE//////////////////////////////////////////
 
 
-function openVeille1() {
-    const veille1 = document.getElementById('veille-1');
-    veille1.showModal();
-}
-function closeVeille1() {
-    const veille1 = document.getElementById('veille-1');
-    veille1.close();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////CONTENU DES MODALS//////////////////////////////////////////
+//Ecole 1
+const choix1Ecole1 = document.getElementById('modal-choix1-ecole1');
+const choix2Ecole1 = document.getElementById('modal-choix2-ecole1');
+const choix3Ecole1 = document.getElementById('modal-choix3-ecole1');
+const choix4Ecole1 = document.getElementById('modal-choix4-ecole1');
+const choix1Ecole1Contenu = document.getElementById('modal-choix1-ecole1-contenu');
+const choix2Ecole1Contenu = document.getElementById('modal-choix2-ecole1-contenu');
+const choix3Ecole1Contenu = document.getElementById('modal-choix3-ecole1-contenu');
+const choix4Ecole1Contenu = document.getElementById('modal-choix4-ecole1-contenu');
+
+//Ecole 2
+const choix1Ecole2 = document.getElementById('modal-choix1-ecole2');
+const choix2Ecole2 = document.getElementById('modal-choix2-ecole2');
+const choix3Ecole2 = document.getElementById('modal-choix3-ecole2');
+const choix4Ecole2 = document.getElementById('modal-choix4-ecole2');
+const choix1Ecole2Contenu = document.getElementById('modal-choix1-ecole2-contenu');
+const choix2Ecole2Contenu = document.getElementById('modal-choix2-ecole2-contenu');
+const choix3Ecole2Contenu = document.getElementById('modal-choix3-ecole2-contenu');
+const choix4Ecole2Contenu = document.getElementById('modal-choix4-ecole2-contenu');
+
+//Ecole 3
+const choix1Ecole3 = document.getElementById('modal-choix1-ecole3');
+const choix2Ecole3 = document.getElementById('modal-choix2-ecole3');
+const choix3Ecole3 = document.getElementById('modal-choix3-ecole3');
+const choix4Ecole3 = document.getElementById('modal-choix4-ecole3');
+const choix1Ecole3Contenu = document.getElementById('modal-choix1-ecole3-contenu');
+const choix2Ecole3Contenu = document.getElementById('modal-choix2-ecole3-contenu');
+const choix3Ecole3Contenu = document.getElementById('modal-choix3-ecole3-contenu');
+const choix4Ecole3Contenu = document.getElementById('modal-choix4-ecole3-contenu');
+
+//Entreprise 1
+const choix1Entreprise1 = document.getElementById('modal-choix1-entreprise1');
+const choix2Entreprise1 = document.getElementById('modal-choix2-entreprise1');
+const choix3Entreprise1 = document.getElementById('modal-choix3-entreprise1');
+const choix4Entreprise1 = document.getElementById('modal-choix4-entreprise1');
+const choix1Entreprise1Contenu = document.getElementById('modal-choix1-entreprise1-contenu');
+const choix2Entreprise1Contenu = document.getElementById('modal-choix2-entreprise1-contenu');
+const choix3Entreprise1Contenu = document.getElementById('modal-choix3-entreprise1-contenu');
+const choix4Entreprise1Contenu = document.getElementById('modal-choix4-entreprise1-contenu');
+
+//Entreprise 2
+const choix1Entreprise2 = document.getElementById('modal-choix1-entreprise2');
+const choix2Entreprise2 = document.getElementById('modal-choix2-entreprise2');
+const choix3Entreprise2 = document.getElementById('modal-choix3-entreprise2');
+const choix4Entreprise2 = document.getElementById('modal-choix4-entreprise2');
+const choix1Entreprise2Contenu = document.getElementById('modal-choix1-entreprise2-contenu');
+const choix2Entreprise2Contenu = document.getElementById('modal-choix2-entreprise2-contenu');
+const choix3Entreprise2Contenu = document.getElementById('modal-choix3-entreprise2-contenu');
+const choix4Entreprise2Contenu = document.getElementById('modal-choix4-entreprise2-contenu');
+
+//Personnel 1
+const choix1Personnel1 = document.getElementById('modal-choix1-personnel1');
+const choix2Personnel1 = document.getElementById('modal-choix2-personnel1');
+const choix3Personnel1 = document.getElementById('modal-choix3-personnel1');
+const choix4Personnel1 = document.getElementById('modal-choix4-personnel1');
+const choix1Personnel1Contenu = document.getElementById('modal-choix1-personnel1-contenu');
+const choix2Personnel1Contenu = document.getElementById('modal-choix2-personnel1-contenu');
+const choix3Personnel1Contenu = document.getElementById('modal-choix3-personnel1-contenu');
+const choix4Personnel1Contenu = document.getElementById('modal-choix4-personnel1-contenu');
+
+//Personnel 2
+const choix1Personnel2 = document.getElementById('modal-choix1-personnel2');
+const choix2Personnel2 = document.getElementById('modal-choix2-personnel2');
+const choix3Personnel2 = document.getElementById('modal-choix3-personnel2');
+const choix4Personnel2 = document.getElementById('modal-choix4-personnel2');
+const choix1Personnel2Contenu = document.getElementById('modal-choix1-personnel2-contenu');
+const choix2Personnel2Contenu = document.getElementById('modal-choix2-personnel2-contenu');
+const choix3Personnel2Contenu = document.getElementById('modal-choix3-personnel2-contenu');
+const choix4Personnel2Contenu = document.getElementById('modal-choix4-personnel2-contenu');
+
+function showChoix1Ecole1Contenu() {
+    choix1Ecole1.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix2Ecole1.style.cssText = 'background-color : transparent !important;';
+    choix3Ecole1.style.cssText = 'background-color : transparent !important;';
+    choix4Ecole1.style.cssText = 'background-color : transparent !important;';
+    choix1Ecole1Contenu.style.cssText = 'display :block !important;';
+    choix2Ecole1Contenu.style.cssText = 'display :none !important;';
+    choix3Ecole1Contenu.style.cssText = 'display :none !important;';
+    choix4Ecole1Contenu.style.cssText = 'display :none !important;';
 }
 
-
-
-function openVeille2() {
-    const veille2 = document.getElementById('veille-2');
-    veille2.showModal();
+function showChoix2Ecole1Contenu() {
+    choix1Ecole1.style.cssText = 'background-color : transparent !important;';
+    choix2Ecole1.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix3Ecole1.style.cssText = 'background-color : transparent !important;';
+    choix4Ecole1.style.cssText = 'background-color : transparent !important;';
+    choix1Ecole1Contenu.style.cssText = 'display :none !important;';
+    choix2Ecole1Contenu.style.cssText = 'display :block !important;';
+    choix3Ecole1Contenu.style.cssText = 'display :none !important;';
+    choix4Ecole1Contenu.style.cssText = 'display :none !important;';
 }
-function closeVeille2() {
-    const veille2 = document.getElementById('veille-2');
-    veille2.close();
+
+function showChoix3Ecole1Contenu() {
+    choix1Ecole1.style.cssText = 'background-color : transparent !important;';
+    choix2Ecole1.style.cssText = 'background-color : transparent !important;';
+    choix3Ecole1.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix4Ecole1.style.cssText = 'background-color : transparent !important;';
+    choix1Ecole1Contenu.style.cssText = 'display :none !important;';
+    choix2Ecole1Contenu.style.cssText = 'display :none !important;';
+    choix3Ecole1Contenu.style.cssText = 'display :block !important;';
+    choix4Ecole1Contenu.style.cssText = 'display :none !important;';
+}
+
+function showChoix4Ecole1Contenu() {
+    choix1Ecole1.style.cssText = 'background-color : transparent !important;';
+    choix2Ecole1.style.cssText = 'background-color : transparent !important;';
+    choix3Ecole1.style.cssText = 'background-color : transparent !important;';
+    choix4Ecole1.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix1Ecole1Contenu.style.cssText = 'display :none !important;';
+    choix2Ecole1Contenu.style.cssText = 'display :none !important;';
+    choix3Ecole1Contenu.style.cssText = 'display :none !important;';
+    choix4Ecole1Contenu.style.cssText = 'display :block !important;';
+}
+
+//Ecole 2
+function showChoix1Ecole2Contenu() {
+    choix1Ecole2.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix2Ecole2.style.cssText = 'background-color : transparent !important;';
+    choix3Ecole2.style.cssText = 'background-color : transparent !important;';
+    choix4Ecole2.style.cssText = 'background-color : transparent !important;';
+    choix1Ecole2Contenu.style.cssText = 'display :block !important;';
+    choix2Ecole2Contenu.style.cssText = 'display :none !important;';
+    choix3Ecole2Contenu.style.cssText = 'display :none !important;';
+    choix4Ecole2Contenu.style.cssText = 'display :none !important;';
+}
+
+function showChoix2Ecole2Contenu() {
+    choix1Ecole2.style.cssText = 'background-color : transparent !important;';
+    choix2Ecole2.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix3Ecole2.style.cssText = 'background-color : transparent !important;';
+    choix4Ecole2.style.cssText = 'background-color : transparent !important;';
+    choix1Ecole2Contenu.style.cssText = 'display :none !important;';
+    choix2Ecole2Contenu.style.cssText = 'display :block !important;';
+    choix3Ecole2Contenu.style.cssText = 'display :none !important;';
+    choix4Ecole2Contenu.style.cssText = 'display :none !important;';
+}
+
+function showChoix3Ecole2Contenu() {
+    choix1Ecole2.style.cssText = 'background-color : transparent !important;';
+    choix2Ecole2.style.cssText = 'background-color : transparent !important;';
+    choix3Ecole2.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix4Ecole2.style.cssText = 'background-color : transparent !important;';
+    choix1Ecole2Contenu.style.cssText = 'display :none !important;';
+    choix2Ecole2Contenu.style.cssText = 'display :none !important;';
+    choix3Ecole2Contenu.style.cssText = 'display :block !important;';
+    choix4Ecole2Contenu.style.cssText = 'display :none !important;';
+}
+
+function showChoix4Ecole2Contenu() {
+    choix1Ecole2.style.cssText = 'background-color : transparent !important;';
+    choix2Ecole2.style.cssText = 'background-color : transparent !important;';
+    choix3Ecole2.style.cssText = 'background-color : transparent !important;';
+    choix4Ecole2.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix1Ecole2Contenu.style.cssText = 'display :none !important;';
+    choix2Ecole2Contenu.style.cssText = 'display :none !important;';
+    choix3Ecole2Contenu.style.cssText = 'display :none !important;';
+    choix4Ecole2Contenu.style.cssText = 'display :block !important;';
 }
 
 
-
-function openVeille3() {
-    const veille3 = document.getElementById('veille-3');
-    veille3.showModal();
+//Ecole 3
+function showChoix1Ecole3Contenu() {
+    choix1Ecole3.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix2Ecole3.style.cssText = 'background-color : transparent !important;';
+    choix3Ecole3.style.cssText = 'background-color : transparent !important;';
+    choix4Ecole3.style.cssText = 'background-color : transparent !important;';
+    choix1Ecole3Contenu.style.cssText = 'display :block !important;';
+    choix2Ecole3Contenu.style.cssText = 'display :none !important;';
+    choix3Ecole3Contenu.style.cssText = 'display :none !important;';
+    choix4Ecole3Contenu.style.cssText = 'display :none !important;';
 }
-function closeVeille3() {
-    const veille3 = document.getElementById('veille-3');
-    veille3.close();
+
+function showChoix2Ecole3Contenu() {
+    choix1Ecole3.style.cssText = 'background-color : transparent !important;';
+    choix2Ecole3.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix3Ecole3.style.cssText = 'background-color : transparent !important;';
+    choix4Ecole3.style.cssText = 'background-color : transparent !important;';
+    choix1Ecole3Contenu.style.cssText = 'display :none !important;';
+    choix2Ecole3Contenu.style.cssText = 'display :block !important;';
+    choix3Ecole3Contenu.style.cssText = 'display :none !important;';
+    choix4Ecole3Contenu.style.cssText = 'display :none !important;';
+}
+
+function showChoix3Ecole3Contenu() {
+    choix1Ecole3.style.cssText = 'background-color : transparent !important;';
+    choix2Ecole3.style.cssText = 'background-color : transparent !important;';
+    choix3Ecole3.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix4Ecole3.style.cssText = 'background-color : transparent !important;';
+    choix1Ecole3Contenu.style.cssText = 'display :none !important;';
+    choix2Ecole3Contenu.style.cssText = 'display :none !important;';
+    choix3Ecole3Contenu.style.cssText = 'display :block !important;';
+    choix4Ecole3Contenu.style.cssText = 'display :none !important;';
+}
+
+function showChoix4Ecole3Contenu() {
+    choix1Ecole3.style.cssText = 'background-color : transparent !important;';
+    choix2Ecole3.style.cssText = 'background-color : transparent !important;';
+    choix3Ecole3.style.cssText = 'background-color : transparent !important;';
+    choix4Ecole3.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix1Ecole3Contenu.style.cssText = 'display :none !important;';
+    choix2Ecole3Contenu.style.cssText = 'display :none !important;';
+    choix3Ecole3Contenu.style.cssText = 'display :none !important;';
+    choix4Ecole3Contenu.style.cssText = 'display :block !important;';
+}
+
+//Entreprise 1
+function showChoix1Entreprise1Contenu() {
+    choix1Entreprise1.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix2Entreprise1.style.cssText = 'background-color : transparent !important;';
+    choix3Entreprise1.style.cssText = 'background-color : transparent !important;';
+    choix4Entreprise1.style.cssText = 'background-color : transparent !important;';
+    choix1Entreprise1Contenu.style.cssText = 'display :block !important;';
+    choix2Entreprise1Contenu.style.cssText = 'display :none !important;';
+    choix3Entreprise1Contenu.style.cssText = 'display :none !important;';
+    choix4Entreprise1Contenu.style.cssText = 'display :none !important;';
+}
+
+function showChoix2Entreprise1Contenu() {
+    choix1Entreprise1.style.cssText = 'background-color : transparent !important;';
+    choix2Entreprise1.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix3Entreprise1.style.cssText = 'background-color : transparent !important;';
+    choix4Entreprise1.style.cssText = 'background-color : transparent !important;';
+    choix1Entreprise1Contenu.style.cssText = 'display :none !important;';
+    choix2Entreprise1Contenu.style.cssText = 'display :block !important;';
+    choix3Entreprise1Contenu.style.cssText = 'display :none !important;';
+    choix4Entreprise1Contenu.style.cssText = 'display :none !important;';
+}
+
+function showChoix3Entreprise1Contenu() {
+    choix1Entreprise1.style.cssText = 'background-color : transparent !important;';
+    choix2Entreprise1.style.cssText = 'background-color : transparent !important;';
+    choix3Entreprise1.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix4Entreprise1.style.cssText = 'background-color : transparent !important;';
+    choix1Entreprise1Contenu.style.cssText = 'display :none !important;';
+    choix2Entreprise1Contenu.style.cssText = 'display :none !important;';
+    choix3Entreprise1Contenu.style.cssText = 'display :block !important;';
+    choix4Entreprise1Contenu.style.cssText = 'display :none !important;';
+}
+
+function showChoix4Entreprise1Contenu() {
+    choix1Entreprise1.style.cssText = 'background-color : transparent !important;';
+    choix2Entreprise1.style.cssText = 'background-color : transparent !important;';
+    choix3Entreprise1.style.cssText = 'background-color : transparent !important;';
+    choix4Entreprise1.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix1Entreprise1Contenu.style.cssText = 'display :none !important;';
+    choix2Entreprise1Contenu.style.cssText = 'display :none !important;';
+    choix3Entreprise1Contenu.style.cssText = 'display :none !important;';
+    choix4Entreprise1Contenu.style.cssText = 'display :block !important;';
+}
+
+//Entreprise 2
+function showChoix1Entreprise2Contenu() {
+    choix1Entreprise2.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix2Entreprise2.style.cssText = 'background-color : transparent !important;';
+    choix3Entreprise2.style.cssText = 'background-color : transparent !important;';
+    choix4Entreprise2.style.cssText = 'background-color : transparent !important;';
+    choix1Entreprise2Contenu.style.cssText = 'display :block !important;';
+    choix2Entreprise2Contenu.style.cssText = 'display :none !important;';
+    choix3Entreprise2Contenu.style.cssText = 'display :none !important;';
+    choix4Entreprise2Contenu.style.cssText = 'display :none !important;';
+}
+
+function showChoix2Entreprise2Contenu() {
+    choix1Entreprise2.style.cssText = 'background-color : transparent !important;';
+    choix2Entreprise2.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix3Entreprise2.style.cssText = 'background-color : transparent !important;';
+    choix4Entreprise2.style.cssText = 'background-color : transparent !important;';
+    choix1Entreprise2Contenu.style.cssText = 'display :none !important;';
+    choix2Entreprise2Contenu.style.cssText = 'display :block !important;';
+    choix3Entreprise2Contenu.style.cssText = 'display :none !important;';
+    choix4Entreprise2Contenu.style.cssText = 'display :none !important;';
+}
+
+function showChoix3Entreprise2Contenu() {
+    choix1Entreprise2.style.cssText = 'background-color : transparent !important;';
+    choix2Entreprise2.style.cssText = 'background-color : transparent !important;';
+    choix3Entreprise2.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix4Entreprise2.style.cssText = 'background-color : transparent !important;';
+    choix1Entreprise2Contenu.style.cssText = 'display :none !important;';
+    choix2Entreprise2Contenu.style.cssText = 'display :none !important;';
+    choix3Entreprise2Contenu.style.cssText = 'display :block !important;';
+    choix4Entreprise2Contenu.style.cssText = 'display :none !important;';
+}
+
+function showChoix4Entreprise2Contenu() {
+    choix1Entreprise2.style.cssText = 'background-color : transparent !important;';
+    choix2Entreprise2.style.cssText = 'background-color : transparent !important;';
+    choix3Entreprise2.style.cssText = 'background-color : transparent !important;';
+    choix4Entreprise2.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix1Entreprise2Contenu.style.cssText = 'display :none !important;';
+    choix2Entreprise2Contenu.style.cssText = 'display :none !important;';
+    choix3Entreprise2Contenu.style.cssText = 'display :none !important;';
+    choix4Entreprise2Contenu.style.cssText = 'display :block !important;';
+}
+
+
+//Personnel 1
+function showChoix1Personnel1Contenu() {
+    choix1Personnel1.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix2Personnel1.style.cssText = 'background-color : transparent !important;';
+    choix3Personnel1.style.cssText = 'background-color : transparent !important;';
+    choix4Personnel1.style.cssText = 'background-color : transparent !important;';
+    choix1Personnel1Contenu.style.cssText = 'display :block !important;';
+    choix2Personnel1Contenu.style.cssText = 'display :none !important;';
+    choix3Personnel1Contenu.style.cssText = 'display :none !important;';
+    choix4Personnel1Contenu.style.cssText = 'display :none !important;';
+}
+
+function showChoix2Personnel1Contenu() {
+    choix1Personnel1.style.cssText = 'background-color : transparent !important;';
+    choix2Personnel1.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix3Personnel1.style.cssText = 'background-color : transparent !important;';
+    choix4Personnel1.style.cssText = 'background-color : transparent !important;';
+    choix1Personnel1Contenu.style.cssText = 'display :none !important;';
+    choix2Personnel1Contenu.style.cssText = 'display :block !important;';
+    choix3Personnel1Contenu.style.cssText = 'display :none !important;';
+    choix4Personnel1Contenu.style.cssText = 'display :none !important;';
+}
+
+function showChoix3Personnel1Contenu() {
+    choix1Personnel1.style.cssText = 'background-color : transparent !important;';
+    choix2Personnel1.style.cssText = 'background-color : transparent !important;';
+    choix3Personnel1.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix4Personnel1.style.cssText = 'background-color : transparent !important;';
+    choix1Personnel1Contenu.style.cssText = 'display :none !important;';
+    choix2Personnel1Contenu.style.cssText = 'display :none !important;';
+    choix3Personnel1Contenu.style.cssText = 'display :block !important;';
+    choix4Personnel1Contenu.style.cssText = 'display :none !important;';
+}
+
+function showChoix4Personnel1Contenu() {
+    choix1Personnel1.style.cssText = 'background-color : transparent !important;';
+    choix2Personnel1.style.cssText = 'background-color : transparent !important;';
+    choix3Personnel1.style.cssText = 'background-color : transparent !important;';
+    choix4Personnel1.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix1Personnel1Contenu.style.cssText = 'display :none !important;';
+    choix2Personnel1Contenu.style.cssText = 'display :none !important;';
+    choix3Personnel1Contenu.style.cssText = 'display :none !important;';
+    choix4Personnel1Contenu.style.cssText = 'display :block !important;';
+}
+
+//Personnel 2
+function showChoix1Personnel2Contenu() {
+    choix1Personnel2.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix2Personnel2.style.cssText = 'background-color : transparent !important;';
+    choix3Personnel2.style.cssText = 'background-color : transparent !important;';
+    choix4Personnel2.style.cssText = 'background-color : transparent !important;';
+    choix1Personnel2Contenu.style.cssText = 'display :block !important;';
+    choix2Personnel2Contenu.style.cssText = 'display :none !important;';
+    choix3Personnel2Contenu.style.cssText = 'display :none !important;';
+    choix4Personnel2Contenu.style.cssText = 'display :none !important;';
+}
+
+function showChoix2Personnel2Contenu() {
+    choix1Personnel2.style.cssText = 'background-color : transparent !important;';
+    choix2Personnel2.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix3Personnel2.style.cssText = 'background-color : transparent !important;';
+    choix4Personnel2.style.cssText = 'background-color : transparent !important;';
+    choix1Personnel2Contenu.style.cssText = 'display :none !important;';
+    choix2Personnel2Contenu.style.cssText = 'display :block !important;';
+    choix3Personnel2Contenu.style.cssText = 'display :none !important;';
+    choix4Personnel2Contenu.style.cssText = 'display :none !important;';
+}
+
+function showChoix3Personnel2Contenu() {
+    choix1Personnel2.style.cssText = 'background-color : transparent !important;';
+    choix2Personnel2.style.cssText = 'background-color : transparent !important;';
+    choix3Personnel2.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix4Personnel2.style.cssText = 'background-color : transparent !important;';
+    choix1Personnel2Contenu.style.cssText = 'display :none !important;';
+    choix2Personnel2Contenu.style.cssText = 'display :none !important;';
+    choix3Personnel2Contenu.style.cssText = 'display :block !important;';
+    choix4Personnel2Contenu.style.cssText = 'display :none !important;';
+}
+
+function showChoix4Personnel2Contenu() {
+    choix1Personnel2.style.cssText = 'background-color : transparent !important;';
+    choix2Personnel2.style.cssText = 'background-color : transparent !important;';
+    choix3Personnel2.style.cssText = 'background-color : transparent !important;';
+    choix4Personnel2.style.cssText = 'background-color : rgba(0, 0, 0, 0.1) !important;';
+    choix1Personnel2Contenu.style.cssText = 'display :none !important;';
+    choix2Personnel2Contenu.style.cssText = 'display :none !important;';
+    choix3Personnel2Contenu.style.cssText = 'display :none !important;';
+    choix4Personnel2Contenu.style.cssText = 'display :block !important;';
 }
