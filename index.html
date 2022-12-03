@@ -30,16 +30,39 @@
         <p class="author">Alexys LAURENT</p>
     </div>
 
-    <div class="page2 page">
+    <div class="page2 page" id="page2">
         <nav>
             <ul>
-                <li><a class="nav-a" href="#APROPOS">A PROPOS </a></li>
-                <li><a class="nav-a" href="">ALTERNANCE </a></li>
-                <li><a class="nav-a" href="#PROJETS">PROJETS </a></li>
-                <li><a class="nav-a" href="#VEILLE">VEILLE </a></li>
-                <li><a class="nav-a right-item" href="#CONTACT">CONTACT </a></li>
+                <li><a onclick="closemobilenav()" class="nav-a" href="#APROPOS">A PROPOS </a></li>
+                <li><a onclick="closemobilenav()" class="nav-a" href="#ALTERNANCE-TITLE">ALTERNANCE </a></li>
+                <li><a onclick="closemobilenav()" class="nav-a" href="#PROJETS">PROJETS </a></li>
+                <li><a onclick="closemobilenav()" class="nav-a" href="#VEILLE">VEILLE </a></li>
+                <li><a onclick="closemobilenav()" class="nav-a right-item" href="#CONTACT">CONTACT </a></li>
+                <div class="mobile-nav">
+                    <svg id="open" onclick="openmobilenav()" xmlns="http://www.w3.org/2000/svg" width="46" height="46"
+                        fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                    <svg onclick="closemobilenav()" id="close" xmlns="http://www.w3.org/2000/svg" width="46" height="46"
+                        fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </div>
             </ul>
         </nav>
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-navlist-container">
+                <ul>
+                    <li><a class="nav-a" href="#APROPOS">A PROPOS </a></li>
+                    <li><a class="nav-a" href="#ALTERNANCE-TITLE">ALTERNANCE </a></li>
+                    <li><a class="nav-a" href="#PROJETS">PROJETS </a></li>
+                    <li><a class="nav-a" href="#VEILLE">VEILLE </a></li>
+                    <li><a class="nav-a" href="#CONTACT">CONTACT </a></li>
+                </ul>
+            </div>
+        </div>
         <div class="sous-page sous-page-apropos">
             <div data-aos="fade-right" data-aos-duration="1000" class="title apropos">
                 <h2 id="APROPOS">A PROPOS DE MOI</h2>
@@ -62,9 +85,10 @@
                         <a href="documents/CV-Alexys-LAURENT.pdf" target="_blank">TÉLÉCHARGER MON CV</a>
                     </div>
                     <div class="infos-texte">
-                        <p>Je m’appelle Alexys LAURENT, j’ai 19 ans et je suis pationné d’informatique, du developpement
+                        <p>Je m’appelle Alexys LAURENT, j’ai 19 ans et je suis passionné d’informatique, du
+                            développement
                             web, des mangas/animes et des sneakers ! <br>
-                            Acctuellement en deuxième année de Bts SIO à l’école IRIS à Paris je suis des études pour
+                            Actuellement en deuxième année de BTS SIO à l’école IRIS à Paris je suis des études pour
                             devenir développeur web</p>
                     </div>
                 </div>
@@ -147,7 +171,7 @@
         </div>
         <div class="sous-page sous-page-alternance">
             <div data-aos="fade-right" data-aos-duration="1000" class="title">
-                <h2 id="ALTERNANCE">ALTERNANCE</h2>
+                <h2 id="ALTERNANCE-TITLE">ALTERNANCE</h2>
                 <hr>
             </div>
             <div class="alternance-flex">
@@ -157,9 +181,9 @@
                     </div>
                     <div class="cd2ri-text-container">
                         <div class="cd2ri-top-text">
-                            <p>Durant cette deuxième annéee en BTS SIO j’ai la chance de pouvoir éffectuer une
+                            <p>Durant cette deuxième année en BTS SIO j’ai la chance de pouvoir effectuer une
                                 alternance au
-                                sein de l’associastion CD2RI</p>
+                                sein de l’association CD2RI</p>
                         </div>
                         <div class="cd2ri-bottom-text">
                             <p>CD2RI propose à ses adhérents de rejoindre un réseau de contacts professionnels répartis
@@ -170,7 +194,7 @@
                                 professionnellement.
                                 CD2RI propose de nombreux services allant de l’aide pour les jeunes ou personnes en
                                 difficultés
-                                afin de trouvé un stage ou un emplois mais aussi la création de site internet et la mise
+                                afin de trouver un stage ou un emploi mais aussi la création de site internet et la mise
                                 en
                                 relation avec leur raiseau interne.
                             </p>
@@ -184,11 +208,11 @@
                     <div class="tchilee-text-container">
                         <div class="tchilee-top-text">
                             <p>CD2RI possède aussi une marque nommée
-                                Tchilee qui est une agence de voyage en ligne</p>
+                                Tchilee qui est une agence de voyages en ligne</p>
                         </div>
                         <div class="tchilee-bottom-text">
                             <p>Tchilee propose de nombreuses destinations accompagnées de plusieurs offres qui
-                                consititues des parcous différents, accompagnés et personnalisables !
+                                constitues des parcours différents, accompagnés et personnalisables !
                             </p>
                         </div>
                     </div>
@@ -213,17 +237,36 @@
 
 
                     <div data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#ecole1" class="block">
-                        <h3>TP Garage</h3>
+                        <div class="block-garage sub-block">
+                            <h3><span class="p-3 bg-light">TP Garage</span></h3>
+                        </div>
+                        <div class="hover-desc">
+                            <p>Ce projet avait pour but de créer une plateforme afin de <span>gérer les clients d'un
+                                    garage</span> ainsi que les interventions. Il dispose d'une <span>
+                                    interface client...</p>
+                        </div>
                     </div>
 
 
                     <div data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#ecole2" class="block">
-                        <h3>TP Scolarite</h3>
+                        <div class="block-scolarite sub-block">
+                            <h3><span class="p-3 bg-light">TP Scolarite</span></h3>
+                        </div>
+                        <div class="hover-desc">
+                            <p>Ce projet avait pour but de créer une plateforme afin de <span>gérer les élèves d'un
+                                    établissement</span> ainsi que les classes. Il dispose d'une <span>
+                                    interface...</span></p>
+                        </div>
                     </div>
 
 
                     <div data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#ecole3" class="block">
-                        <h3>PPE</h3>
+                        <div class="block-PPE sub-block">
+                            <h3><span class="p-3 bg-light">Projet <br> auto-école <br> (en cours)</span></h3>
+                        </div>
+                        <div class="hover-desc">
+                            <p></p>
+                        </div>
                     </div>
 
                 </div>
@@ -232,12 +275,23 @@
 
 
                     <div data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#entreprise1" class="block">
-                        <h3>Tchilee v3</h3>
+                        <div class="block-tchilee sub-block">
+                            <h3><span class="p-3 bg-light">Tchilee v3</span></h3>
+                        </div>
+                        <div class="hover-desc">
+                            <p>Durant mon 3ème mois en alternance au sein de l'association CD2RI j'ai eu l'occasion
+                                de réaliser la v3 de leur Site Tchilee.fr qui est une...</p>
+                        </div>
                     </div>
 
 
                     <div data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#entreprise2" class="block">
-                        <h3>SkillTouch</h3>
+                        <div class="block-SkillsTouch sub-block">
+                            <h3><span class="p-3 bg-light">SkillsTouch</span></h3>
+                        </div>
+                        <div class="hover-desc">
+                            <p></p>
+                        </div>
                     </div>
 
 
@@ -247,13 +301,24 @@
 
 
                     <div data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#personnel1" class="block">
-                        <h3>Mon serveur web apache</h3>
+                        <div class="block-server sub-block">
+                            <h3><span class="p-3 bg-light">Mon serveur web Apache</span></h3>
+                        </div>
+                        <div class="hover-desc">
+                            <p>J'ai réaliser mon propre server web sous ubuntu 20.04 afin de pouvoir publié mes
+                                différents projets et parfaire mes compétences en sécurité...</p>
+                        </div>
                     </div>
 
 
 
                     <div data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#personnel2" class="block">
-                        <h3>Bank Dashboard</h3>
+                        <div class="block-bank sub-block">
+                            <h3><span class="p-3 bg-light">Bank Dashboard</span></h3>
+                        </div>
+                        <div class="hover-desc">
+                            <p>Ce projet avait pour but de créer une plateforme afin de <span>gérer mes revenus</p>
+                        </div>
                     </div>
 
 
@@ -272,13 +337,16 @@
                 <div id="veille-blocks" class="veille-blocks">
 
 
-                    <div data-aos="zoom-in" onclick="openVeille1()" class="block">
-                        <h3>veille 1</h3>
+                    <div data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#copilot" onclick="openVeille1()"
+                        class="block">
+                        <div class="block-copilot sub-block">
+                            <h3><span class="p-3 bg-light">GitHub Copilot</span></h3>
+                        </div>
+                        <div class="hover-desc">
+                            <p>Github copilot est une intelligence artificelle créee dans le but d'aider les
+                                developpeurs</p>
+                        </div>
                     </div>
-                    <dialog id="veille-1">
-                        <h1>veille 1</h1>
-                        <button onclick="closeVeille1()">Fermer</button>
-                    </dialog>
 
 
                     <div data-aos="zoom-in" onclick="openVeille2()" class="block">
@@ -432,22 +500,159 @@
                         </div>
                         <div class="contenu-modal">
                             <div id="modal-choix1-ecole1-contenu">
-                                <p>Présentation du projet école 1</p>
+                                <p>Ce projet avait pour but de créer une plateforme afin de <span>gérer les clients d'un
+                                        garage</span> ainsi que les interventions. <br> Il dispose d'une <span>
+                                        interface client</span> ou l'on
+                                    peut appercevoir ses véhicules enregistrés ainsi qu'une <span> interface admin
+                                    </span> qui nous
+                                    permet <span> d'insérer un nouveau client, son véhicule, un téchicien et de créer
+                                        une
+                                        intervention qui les relient tous </span></p>
                             </div>
                             <div id="modal-choix2-ecole1-contenu" class="modal-choix-contenu-g">
-                                <p>Techno utilisées du projet école 1</p>
+
+                                <h5>IDE :</h5>
+
+                                <p>- Visual Studio Code</p>
+
+
+
+                                <h5>Languages :</h5>
+
+                                <p>- HTML</p>
+                                <p>- CSS</p>
+                                <p>- PHP</p>
+                                <p>- SQL</p>
+
+
+                                <h5>Architecture :</h5>
+
+                                <p>- Modèle MVC</p>
+
+                                <h5>Organisation :</h5>
+
+                                <p>- Trello</p>
+                                <p>- Gantt</p>
+
+                                <h5>Maquette :</h5>
+
+                                <p>- Figma</p>
+
                             </div>
                             <div id="modal-choix3-ecole1-contenu" class="modal-choix-contenu-g">
-                                <p>Comptétences acquises du projet école 1</p>
+
+                                <p>- Travail en équipe</p>
+                                <p>- Git (Pour le travail en équipe)</p>
+                                <p>- Trello et Gantt (Pour la planification et distribution des taches)</p>
+                                <p>- Meilleur compréhention de l'architecure MVC</p>
+                                <p>- Utilisation de PDO (pour une connexion sécurisée à la BDD)</p>
+
                             </div>
                             <div id="modal-choix4-ecole1-contenu" class="modal-choix-contenu-g">
-                                <p>Captures du projet école 1</p>
+                                <div id="carouselgarage" class="carousel slide" data-bs-ride="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselgarage" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselgarage" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselgarage" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselgarage" data-bs-slide-to="3"
+                                            aria-label="Slide 4"></button>
+                                        <button type="button" data-bs-target="#carouselgarage" data-bs-slide-to="4"
+                                            aria-label="Slide 5"></button>
+                                        <button type="button" data-bs-target="#carouselgarage" data-bs-slide-to="5"
+                                            aria-label="Slide 6"></button>
+                                        <button type="button" data-bs-target="#carouselgarage" data-bs-slide-to="6"
+                                            aria-label="Slide 7"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <a target="_blank" href="images/Garage2023/home-admin.png">
+                                                <img src="images/Garage2023/home-admin.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page Admin Accueil</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/Garage2023/clients-admin.png">
+                                                <img src="images/Garage2023/clients-admin-petit.png"
+                                                    class="d-block w-100" alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page Admin Gestion client</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/Garage2023/vehicules-admin.png">
+                                                <img src="images/Garage2023/vehicules-admin-petit.png"
+                                                    class="d-block w-100" alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page Admin Gestion véhicules</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/Garage2023/techniciens-admin.png">
+                                                <img src="images/Garage2023/techniciens-admin-petit.png"
+                                                    class="d-block w-100" alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page Admin Gestion téchniciens</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/Garage2023/intervention-admin.png">
+                                                <img src="images/Garage2023/intervention-admin-petit.png"
+                                                    class="d-block w-100" alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page Admin Gestion Interventions</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/Garage2023/user.png">
+                                                <img src="images/Garage2023/user.png" class="d-block w-100" alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page User Véhicule</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/Garage2023/login-garage.png">
+                                                <img src="images/Garage2023/login-garage.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page Login</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselgarage"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselgarage"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+
                     </div>
                 </div>
             </div>
@@ -482,22 +687,146 @@
                         </div>
                         <div class="contenu-modal">
                             <div id="modal-choix1-ecole2-contenu">
-                                <p>Présentation du projet école 2</p>
+                                <p>Ce projet avait pour but de créer une plateforme afin de <span>gérer les élèves d'un
+                                        établissement</span> ainsi que les classes. <br> Il dispose d'une <span>
+                                        interface client</span> ou l'on
+                                    peut appercevoir la liste des classes,des matières et des élèves enregistrés ainsi
+                                    qu'une <span>
+                                        interface admin
+                                    </span> qui nous
+                                    permet <span> d'insérer un nouvel élève, une classe, une matière et de les relier
+                                        entre eux </span></p>
                             </div>
                             <div id="modal-choix2-ecole2-contenu" class="modal-choix-contenu-g">
-                                <p>Techno utilisées du projet école 2</p>
+                                <h5>IDE :</h5>
+
+                                <p>- Visual Studio Code</p>
+
+
+
+                                <h5>Languages :</h5>
+
+                                <p>- HTML</p>
+                                <p>- CSS</p>
+                                <p>- PHP</p>
+                                <p>- SQL</p>
+
+
+                                <h5>Architecture :</h5>
+
+                                <p>- Modèle MVC</p>
+
+                                <h5>Organisation :</h5>
+
+                                <p>- Trello</p>
+                                <p>- Gantt</p>
+
+                                <h5>Maquette :</h5>
+
+                                <p>- Figma</p>
                             </div>
                             <div id="modal-choix3-ecole2-contenu" class="modal-choix-contenu-g">
-                                <p>Comptétences acquises du projet école 2</p>
+
+                                <p>- Travail en équipe</p>
+                                <p>- Git (Pour le travail en équipe)</p>
+                                <p>- Trello et Gantt (Pour la planification et distribution des taches)</p>
+                                <p>- Meilleur compréhention de l'architecure MVC</p>
+                                <p>- Utilisation de PDO (pour une connexion sécurisée à la BDD)</p>
+
                             </div>
                             <div id="modal-choix4-ecole2-contenu" class="modal-choix-contenu-g">
-                                <p>Captures du projet école 2</p>
+                                <div id="carouselscolarite" class="carousel slide" data-bs-ride="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselscolarite" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselscolarite" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselscolarite" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselscolarite" data-bs-slide-to="3"
+                                            aria-label="Slide 4"></button>
+                                        <button type="button" data-bs-target="#carouselscolarite" data-bs-slide-to="4"
+                                            aria-label="Slide 5"></button>
+                                        <button type="button" data-bs-target="#carouselscolarite" data-bs-slide-to="5"
+                                            aria-label="Slide 6"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <a target="_blank" href="images/Garage2023/home-admin.png">
+                                                <img src="images/Garage2023/home-admin.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page Home avec une vue sur les informations essentielles</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/Scolarite/classes-admin.png">
+                                                <img src="images/Scolarite/classes-admin-petit.png"
+                                                    class="d-block w-100" alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page Admin Gestion des classes</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/Scolarite/professeurs-admin.png">
+                                                <img src="images/Scolarite/professeurs-admin-petit.png"
+                                                    class="d-block w-100" alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page Admin Gestion des professeurs</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/Scolarite/enseignements-admin.png">
+                                                <img src="images/Scolarite/enseignements-admin-petit.png"
+                                                    class="d-block w-100" alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page Admin Gestion des enseignements</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/Scolarite/profile.png">
+                                                <img src="images/Scolarite/profile.png" class="d-block w-100" alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page Profile</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/Scolarite/classes-user.png">
+                                                <img src="images/Scolarite/classes-user.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page User visionnage des classes</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselscolarite" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselscolarite" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+
                     </div>
                 </div>
             </div>
@@ -532,22 +861,135 @@
                         </div>
                         <div class="contenu-modal">
                             <div id="modal-choix1-ecole3-contenu">
-                                <p>Présentation du projet école 3</p>
+                                <p>Avec mon groupe scolaire composé de <span>Louis Lamouche</span> et <span>Valentio
+                                        Pinto</span> et moi même nous sommes
+                                    actuellement en train de travailler sur <span>un site d'auto-école</span> afin de le
+                                    présenter le
+                                    jour de notre épreuve de BTS. <br> Ce projet à pour but de réaliser <span>la vitrine
+                                        d'une
+                                        auto école</span> ainsi qu'<span>une interface utilistateur</span> pour ceux
+                                    ayant un forfait que
+                                    l'auto-école. <br> Grâce a cette interface l'utilistateur pourra consulter son
+                                    forfait,
+                                    ses heures effectués, son agenda avec ses prochaines heures de conduites, la
+                                    possibilité de demander ou annuler des heures et avoir accès à un mini code de la
+                                    route afin de s'entrainer. <br> Le site disposera aussi d'<span>une interface
+                                        moniteur</span> ou
+                                    il
+                                    pourra accépter ou non les demandes de ses élèves ainsi qu'accéder à son agenda.
+                                    <br> Pour finir il y aura <span>une interface Admin</span> permettant d'insérer ou
+                                    supprimer un
+                                    élève
+                                    et un moniteur
+                                </p>
                             </div>
                             <div id="modal-choix2-ecole3-contenu" class="modal-choix-contenu-g">
-                                <p>Techno utilisées du projet école 3</p>
+                                <h5>IDE :</h5>
+
+                                <p>- Visual Studio Code</p>
+
+
+
+                                <h5>Languages :</h5>
+
+                                <p>- HTML</p>
+                                <p>- CSS</p>
+                                <p>- PHP</p>
+                                <p>- SQL</p>
+
+
+                                <h5>Architecture :</h5>
+
+                                <p>- Modèle MVC</p>
+
+                                <h5>Organisation :</h5>
+
+                                <p>- Trello</p>
+                                <p>- Gantt</p>
+
+                                <h5>Maquette :</h5>
+
+                                <p>- Figma</p>
+
+                                <h5>Travail collaboratif :</h5>
+
+                                <p>- Git</p>
                             </div>
                             <div id="modal-choix3-ecole3-contenu" class="modal-choix-contenu-g">
-                                <p>Comptétences acquises du projet école 3</p>
+
+                                <p>- Travail en équipe</p>
+                                <p>- Git (Pour le travail en équipe)</p>
+                                <p>- Trello et Gantt (Pour la planification et distribution des taches)</p>
+                                <p>- Meilleur compréhention de l'architecure MVC</p>
+                                <p>- Utilisation de PDO (pour une connexion sécurisée à la BDD)</p>
+
                             </div>
                             <div id="modal-choix4-ecole3-contenu" class="modal-choix-contenu-g">
-                                <p>Captures du projet école 3</p>
+                                <div id="carouselPPE" class="carousel slide" data-bs-ride="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselPPE" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselPPE" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselPPE" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselPPE" data-bs-slide-to="3"
+                                            aria-label="Slide 4"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <a target="_blank" href="images/PPE/Register.png">
+                                                <img src="images/PPE/Register.png" class="d-block w-100" alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page d'inscription</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/PPE/Login.png">
+                                                <img src="images/PPE/Login.png" class="d-block w-100" alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page de connexion</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/PPE/Accueil.png">
+                                                <img src="images/PPE/Accueil-petit.png" class="d-block w-100" alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page d'accueil</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/PPE/Cpf.png">
+                                                <img src="images/PPE/Cpf-petit.png" class="d-block w-100" alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page CPF</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPPE"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPPE"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+
                     </div>
                 </div>
             </div>
@@ -583,23 +1025,109 @@
                             </div>
                         </div>
                         <div class="contenu-modal">
-                            <div id="modal-choix1-entreprise1-contenu">
-                                <p>Présentation du projet entreprise 1</p>
+                            <div id="modal-choix1-entreprise1-contenu" class="choix1-contenu-g">
+                                <p>Durant mon 3ème mois en alternance au sein de l'association CD2RI j'ai eu l'occasion
+                                    de réaliser la v3 de leur Site Tchilee.fr qui est une agence de voyage en ligne</p>
                             </div>
                             <div id="modal-choix2-entreprise1-contenu" class="modal-choix-contenu-g">
-                                <p>Techno utilisées du projet entreprise 1</p>
+                                <h5>CMS :</h5>
+
+                                <p>- Wix (EditorX)</p>
+
+
+
+                                <h5>Languages :</h5>
+
+                                <p>- JAVASCRIPT</p>
+
+
+                                <h5>Organisation :</h5>
+
+                                <p>- Jira</p>
+
+                                <h5>Maquette :</h5>
+
+                                <p>- Figma</p>
                             </div>
                             <div id="modal-choix3-entreprise1-contenu" class="modal-choix-contenu-g">
-                                <p>Comptétences acquises du projet entreprise 1</p>
+                                <p>- Planifier ses missions et les documenter avec jira</p>
+                                <p>- Utilisation du cms wix version EditorX</p>
+                                <p>- Utilisation du JQUERY pour des fonctions sur l'éditeur de code 'Velo' propre a Wix
+                                </p>
+                                <p>- Réaliser une maquette détaillée d'un site d'agence de voyage</p>
+
                             </div>
-                            <div id="modal-choix4-entreprise1-contenu" class="modal-choix-contenu-g">
-                                <p>Captures du projet entreprise 1</p>
+                            <div id="modal-choix4-entreprise1-contenu"
+                                class="modal-choix-contenu-g modal-choix-contenu-capture-g">
+                                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions"
+                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <a target="_blank" href="images/Tchilee/accueil.png">
+                                                <img src="images/Tchilee/accueil.png" class="d-block w-100" alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page d'accueil</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/Tchilee/amerique.png">
+                                                <img src="images/Tchilee/amerique-petit.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page continent</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/Tchilee/canada.png">
+                                                <img src="images/Tchilee/canana-petit.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page pays</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/Tchilee/quebec.png">
+                                                <img src="images/Tchilee/quebec-petit.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page offre</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+
                     </div>
                 </div>
             </div>
@@ -634,22 +1162,94 @@
                         </div>
                         <div class="contenu-modal">
                             <div id="modal-choix1-entreprise2-contenu">
-                                <p>Présentation du projet entreprise 2</p>
+                                <p>Durant mon alternance au sein de CD2RI je travail sur un <span>prototype</span>
+                                    d'<span>application de
+                                        recherche d'emploi</span> avec une utilisation <span>type Tinder</span>. Vous
+                                    pouvez vous inscrire soit
+                                    en tant qu'<span>utilisateur</span> soit en tant qu'<span>employeur</span>. Vous
+                                    définissez ensuite votre
+                                    recherche (stage,alternance,CDD,CDI) ainsi qu'une liste de savoir faire et savoir
+                                    être vous correspondant ou correspondant à l'offre d'emploi que vous déposer en tant
+                                    qu'employeur. Des profiles defilleront ensuite basé sur votre critères de recherche
+                                    et vous avez la possibilité de <span>passer ou de liker le profile</span>. Si un
+                                    like à été
+                                    généré des deux cotés cela créer un <span>match</span> et l'utilisateur ainsi que
+                                    l'employeur on
+                                    la possibilité de <span>discuter</span> pour faire connaissance et potentiellement
+                                    définir un
+                                    entretien.</p>
                             </div>
                             <div id="modal-choix2-entreprise2-contenu" class="modal-choix-contenu-g">
-                                <p>Techno utilisées du projet entreprise 2</p>
+                                <h5>CMS :</h5>
+
+                                <p>- Bubble</p>
+
+                                <h5>Organisation :</h5>
+
+                                <p>- Jira</p>
                             </div>
                             <div id="modal-choix3-entreprise2-contenu" class="modal-choix-contenu-g">
-                                <p>Comptétences acquises du projet entreprise 2</p>
+                                <p>- Utilisation de Bubble pour créer des applications web</p>
+                                <p>- Définir ses missions et les documenter avec Jira et OneNote</p>
                             </div>
                             <div id="modal-choix4-entreprise2-contenu" class="modal-choix-contenu-g">
-                                <p>Captures du projet entreprise 2</p>
+                                <div id="carouselSkillsTouch" class="carousel slide" data-bs-ride="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselSkillsTouch" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselSkillsTouch" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselSkillsTouch" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <a target="_blank" href="images/SkillTouch/index.png">
+                                                <img src="images/SkillTouch/index-petit.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page index avec les profils proposés</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/SkillTouch/profile.png">
+                                                <img src="images/SkillTouch/profile-petit.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page de votre profil</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/SkillTouch/messages.png">
+                                                <img src="images/SkillTouch/messages.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page discussion créer lors d'un match</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselSkillsTouch" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselSkillsTouch" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+
                     </div>
                 </div>
             </div>
@@ -684,22 +1284,106 @@
                         </div>
                         <div class="contenu-modal">
                             <div id="modal-choix1-personnel1-contenu">
-                                <p>Présentation du projet personnel 1</p>
+                                <p>J'ai réalisé mon propre server web à l'aide d'un deuxième ordinateur installé chez
+                                    moi. Ce PC contient une machine virtuel sous ubuntu 20.04 avec LAMP installé dessus.
+                                    Pour rendre se serveur web accessible par tout le monde sur internet j'ai du faire
+                                    la demande au près de mon fournisseur internet d'une adresse ip fixe qui m'a ensuite
+                                    permis de créer des redirections de ports depuis mon adresse ip vers mon serveur
+                                    web.</p>
                             </div>
                             <div id="modal-choix2-personnel1-contenu" class="modal-choix-contenu-g">
-                                <p>Techno utilisées du projet personnel 1</p>
+                                <h5>LAMP :</h5>
+
+                                <p>- Linux (ubuntu 20.04)</p>
+                                <p>- Apache</p>
+                                <p>- Mysql</p>
+                                <p>- PHP</p>
+
+                                <h5>Protocole :</h5>
+                                <p>- SSH</p>
+
+                                <h5>Connexion à distance avec SSH :</h5>
+                                <p>- Putty</p>
+
+                                <h5>Sécurité :</h5>
+
+                                <p>- Iptables</p>
+                                <p>- FailToBan</p>
+
+
+                                <h5>Réseau :</h5>
+                                <p>- Redirection de ports depuis l'inteface de ma box internet</p>
+
+
+
                             </div>
                             <div id="modal-choix3-personnel1-contenu" class="modal-choix-contenu-g">
-                                <p>Comptétences acquises du projet personnel 1</p>
+                                <p>- Meilleur compréhension et utilisation du terminal sous ubuntu</p>
+                                <p>- Installation d'un nom de domaine sous apache avec certificat SSL (https)</p>
+                                <p>- Meilleur compréhension des ports en réseau</p>
+                                <p>- Mise en place de "Virtual Host" dans Apache pour avoir plusieurs sites sur un
+                                    serveur web</p>
+                                <p>- Installation d'un firewall avec Iptables</p>
+                                <p>- Connexion à distance par clés avec le protocol SSH</p>
+                                <p>- Mise en place de Fail To Ban qui ban une adresse ip temporairement après un certain
+                                    nombres d'échecs de connexion</p>
                             </div>
                             <div id="modal-choix4-personnel1-contenu" class="modal-choix-contenu-g">
-                                <p>Captures du projet personnel 1</p>
+                                <div id="carouselServer" class="carousel slide" data-bs-ride="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselServer" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselServer" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselServer" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <a target="_blank" href="images/Serveur/iptables.png">
+                                                <img src="images/Serveur/iptables.png" class="d-block w-100" alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Règles Iptables</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/Serveur/virtualHost.png">
+                                                <img src="images/Serveur/virtualHost.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Exemple d'un VirtualHost</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/Serveur/ubuntu.png">
+                                                <img src="images/Serveur/ubuntu.png" class="d-block w-100" alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Terminal Ubuntu 20.04</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselServer"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselServer"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+
                     </div>
                 </div>
             </div>
@@ -734,26 +1418,224 @@
                         </div>
                         <div class="contenu-modal">
                             <div id="modal-choix1-personnel2-contenu">
-                                <p>Présentation du projet personnel 2</p>
+                                <p>"Bank Dashboard" est le nom de ma première application web réalisé avec Node Js et
+                                    certaines librairies. Elle permet de gérer ses revenus et ses dépenses ainsi
+                                    qu'avoir certaines statistiques sur son mois comme par exemple le montant total de
+                                    dépense,revenus ou reccurence du mois. Elle dispose aussi d'une courbe montrant
+                                    l'évolution de son solde sur les dernieres transactions ainsi qu'un cammenbert
+                                    indiquant dans quelle catégorie nous avons effectué le plus de dépenses.</p>
+                                <br><br>
+                                <a target="_blank" class="modal-a"
+                                    href="https://github.com/Alexys-LAURENT/Bank_dashboard">Retrouver le
+                                    projet sur
+                                    GitHub ici.</a>
                             </div>
                             <div id="modal-choix2-personnel2-contenu" class="modal-choix-contenu-g">
-                                <p>Techno utilisées du projet personnel 2</p>
+                                <h5>IDE :</h5>
+
+                                <p>- Visual Studio Code</p>
+
+
+
+                                <h5>Languages :</h5>
+
+                                <p>- HTML</p>
+                                <p>- CSS</p>
+                                <p>- JAVASCRIPT</p>
+                                <p>- SQL</p>
+
+                                <h5>Plateform Logiciel :</h5>
+
+                                <p>- Node JS</p>
+
+                                <h5>Librairies :</h5>
+
+                                <p>- Express</p>
+                                <p>- Express my-connection</p>
+                                <p>- Express-Flash</p>
+                                <p>- Passport</p>
+                                <p>- Ejs</p>
+                                <p>- Charts js</p>
+                                <p>- Bcrypt</p>
+
+                                <h5>Maquette :</h5>
+
+                                <p>- Figma</p>
                             </div>
                             <div id="modal-choix3-personnel2-contenu" class="modal-choix-contenu-g">
-                                <p>Comptétences acquises du projet personnel 2</p>
+                                <p>- Première utilisation de Node JS</p>
+                                <p>- Installation de différentes librairies</p>
+                                <p>- Connexion à une base de données MYSQL avec JAVASCRIPT grace à Express My-Connection
+                                </p>
+                                <p>- Afficher les données récupérer depuis la BDD avec EJS</p>
+                                <p>- Afficher des messages flash avec Express-Flash</p>
                             </div>
                             <div id="modal-choix4-personnel2-contenu" class="modal-choix-contenu-g">
-                                <p>Captures du projet personnel 2</p>
+                                <div id="carouselbank" class="carousel slide" data-bs-ride="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselbank" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselbank" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselbank" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselbank" data-bs-slide-to="3"
+                                            aria-label="Slide 4"></button>
+                                        <button type="button" data-bs-target="#carouselbank" data-bs-slide-to="4"
+                                            aria-label="Slide 5"></button>
+                                        <button type="button" data-bs-target="#carouselbank" data-bs-slide-to="5"
+                                            aria-label="Slide 6"></button>
+                                        <button type="button" data-bs-target="#carouselbank" data-bs-slide-to="6"
+                                            aria-label="Slide 7"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <a target="_blank" href="images/bank-dashboard/login.png">
+                                                <img src="images/bank-dashboard/login.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page Login</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/bank-dashboard/index.png">
+                                                <img src="images/bank-dashboard/index.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page index (dark mode)</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/bank-dashboard/index-white.png">
+                                                <img src="images/bank-dashboard/index-white.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page index (white mode)</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/bank-dashboard/all-transactions.png">
+                                                <img src="images/bank-dashboard/all-transactions.png"
+                                                    class="d-block w-100" alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page pour visionner toutes les transactions</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/bank-dashboard/a-venir.png">
+                                                <img src="images/bank-dashboard/a-venir.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Page pour visionner les transactions à venir</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/bank-dashboard/add-revenu.png">
+                                                <img src="images/bank-dashboard/add-revenu.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Modal pour ajouter un revenu</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <a target="_blank" href="images/bank-dashboard/add-depensse.png">
+                                                <img src="images/bank-dashboard/add-depensse.png" class="d-block w-100"
+                                                    alt="...">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Modal pour ajouter une dépensse</h5>
+                                                <p>Cliquez pour consulter</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselbank"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselbank"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+
                     </div>
                 </div>
             </div>
         </div>
+
+
+
+        <!-- Modal Copilot -->
+        <div class="modal fade" id="copilot" tabindex="-1" aria-labelledby="copilot" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="copilot">GitHub lance son outil Copilot pour aider les
+                            développeurs</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column align-item-center justify-content-center p-5 veille-contenu">
+                            <p><span>G</span>ithub Copilot est une <strong>intelligence artificielle</strong> créee par
+                                <strong>GitHub et
+                                    OpenAI</strong> dans le but
+                                d'aider les
+                                développeurs. <br> Elle est capable de <strong>générer du code</strong> à partir d'un
+                                commentaire mais
+                                aussi
+                                de faire une <strong>prédiction</strong> de ce que vous voullez potentiellement écrire
+                                grace au modèle de
+                                Langages <strong>GPT3</strong> développer par OpenAI. <br> Cette AI permet donc la
+                                prédiction dans une
+                                <strong>douzaine de Langages</strong> et s'installe sur
+                                certains IDE dont Visual Studio Code. <br> GitHub Copilot est disponible par
+                                <strong>abonnement</strong>
+                                mensuel (9.99$) ou annuel (99$) mais dispose aussi d'une offre <strong>gratuite pour les
+                                    étudiants</strong>
+                                Présenter le 29 juin 2021, GitHub Copilot est maintenant disponible pour les
+                                développeurs depuis le <strong>20 juillet 2021.</strong><br>
+                                Afin d'apprendre à coder Github Copilot s'est entrainé sur plus de 1 milliard de lignes
+                                de code à travers tous les repository github disponible. <br> Afin de valider la
+                                proposition de github il suffit de cliquer sur la touche TAB et de laisser github
+                                copilot faire son travail. <br> <strong>Attention</strong> : Github Copilot est encore
+                                en phase de test et peut donc proposer des erreurs de syntaxe ou des erreurs de logique
+                            </p>
+                            <img class="mx-auto" src="images/copilot/exemple.png" width="80%" alt="">
+                            <img class="mx-auto mt-2" src="images/copilot/exemple2.png" width="80%" alt="">
+                            <p class="mt-5"><u>source :</u> <br> <a
+                                    href="https://github.com/features/copilot">https://github.com/features/copilot</a>
+                                <br> <a
+                                    href="https://fr.wikipedia.org/wiki/GPT-3">https://fr.wikipedia.org/wiki/GPT-3</a>
+                                <br> <a
+                                    href="https://en.wikipedia.org/wiki/GitHub_Copilot">https://en.wikipedia.org/wiki/GitHub_Copilot</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 
 

@@ -1,4 +1,32 @@
 
+const menu = document.getElementById('mobile-menu');
+const open = document.getElementById('open');
+const close = document.getElementById('close');
+
+function openmobilenav() {
+    var scrollTop = document.getElementById('page2').pageYOffset || document.documentElement.scrollTop;
+    menu.style.display = 'block';
+    menu.style.position = 'absolute';
+    menu.style.top = scrollTop + 'px';
+    menu.style.left = 0 + 'px';
+    document.body.style.overflow = 'hidden';
+    open.style.display = 'none';
+    close.style.display = 'block';
+}
+
+
+
+function closemobilenav() {
+    menu.style.display = 'none';
+    document.body.style.overflow = 'initial';
+    open.style.display = 'block';
+    close.style.display = 'none';
+}
+
+
+
+
+
 
 //show backToTop button on scroll
 window.addEventListener('scroll', function () {
@@ -238,12 +266,12 @@ new Chart(HTML, {
             },
             title: {
                 display: true,
-                text: 'HTML'
+                text: 'HTML',
+                color: "white"
             }
         }
     }
 });
-
 
 new Chart(CSS, {
     type: 'doughnut',
@@ -269,7 +297,8 @@ new Chart(CSS, {
             },
             title: {
                 display: true,
-                text: 'CSS'
+                text: 'CSS',
+                color: "white"
             }
         }
     }
@@ -300,7 +329,8 @@ new Chart(JS, {
             },
             title: {
                 display: true,
-                text: 'JAVA SCRIPT'
+                text: 'JAVA SCRIPT',
+                color: "white"
             }
         }
     }
@@ -332,7 +362,8 @@ new Chart(PHP, {
             },
             title: {
                 display: true,
-                text: 'PHP'
+                text: 'PHP',
+                color: "white"
             }
         }
     }
@@ -363,7 +394,8 @@ new Chart(MYSQL, {
             },
             title: {
                 display: true,
-                text: 'MYSQL'
+                text: 'MYSQL',
+                color: "white"
             }
         }
     }
@@ -395,7 +427,8 @@ new Chart(CHARTJS, {
             },
             title: {
                 display: true,
-                text: 'CHARTS JS'
+                text: 'CHARTS JS',
+                color: "white"
             }
         }
     }
@@ -427,7 +460,8 @@ new Chart(APACHE, {
             },
             title: {
                 display: true,
-                text: 'APACHE'
+                text: 'APACHE',
+                color: "white"
             }
         }
     }
@@ -459,7 +493,8 @@ new Chart(NODEJS, {
             },
             title: {
                 display: true,
-                text: 'NODE JS'
+                text: 'NODE JS',
+                color: "white"
             }
         }
     }

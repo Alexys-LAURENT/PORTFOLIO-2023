@@ -138,7 +138,7 @@ function showChoix1Ecole1Contenu() {
     choix2Ecole1.style.cssText = 'background-color : transparent !important;';
     choix3Ecole1.style.cssText = 'background-color : transparent !important;';
     choix4Ecole1.style.cssText = 'background-color : transparent !important;';
-    choix1Ecole1Contenu.style.cssText = 'display :block !important;';
+    choix1Ecole1Contenu.style.cssText = 'display :flex !important;';
     choix2Ecole1Contenu.style.cssText = 'display :none !important;';
     choix3Ecole1Contenu.style.cssText = 'display :none !important;';
     choix4Ecole1Contenu.style.cssText = 'display :none !important;';
@@ -274,7 +274,7 @@ function showChoix1Entreprise1Contenu() {
     choix2Entreprise1.style.cssText = 'background-color : transparent !important;';
     choix3Entreprise1.style.cssText = 'background-color : transparent !important;';
     choix4Entreprise1.style.cssText = 'background-color : transparent !important;';
-    choix1Entreprise1Contenu.style.cssText = 'display :block !important;';
+    choix1Entreprise1Contenu.style.cssText = 'display :flex !important;';
     choix2Entreprise1Contenu.style.cssText = 'display :none !important;';
     choix3Entreprise1Contenu.style.cssText = 'display :none !important;';
     choix4Entreprise1Contenu.style.cssText = 'display :none !important;';
