@@ -9,6 +9,18 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="icon" href="images/avatar.png">
+    <!-- Hotjar Tracking Code for my site -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 3274817, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
 </head>
 
 <body>
@@ -55,11 +67,21 @@
         <div class="mobile-menu" id="mobile-menu">
             <div class="mobile-navlist-container">
                 <ul>
-                    <li><a class="nav-a" href="#APROPOS">A PROPOS </a></li>
-                    <li><a class="nav-a" href="#ALTERNANCE-TITLE">ALTERNANCE </a></li>
-                    <li><a class="nav-a" href="#PROJETS">PROJETS </a></li>
-                    <li><a class="nav-a" href="#VEILLE">VEILLE </a></li>
-                    <li><a class="nav-a" href="#CONTACT">CONTACT </a></li>
+                    <li>
+                        <p onclick="scrollToApropos()">A PROPOS</p>
+                    </li>
+                    <li>
+                        <p onclick="scrollToAlternance()">ALTERNANCE</p>
+                    </li>
+                    <li>
+                        <p onclick="scrollToProjets()">PROJETS</p>
+                    </li>
+                    <li>
+                        <p onclick="scrollToVeille()">VEILLE</p>
+                    </li>
+                    <li>
+                        <p onclick="scrollToContact()">CONTACT</p>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -231,6 +253,7 @@
                     <button onclick="showEntreprise()" id="bouton-entreprise"
                         class="projet-catégorie">ENTREPRISE</button>
                     <button onclick="showPersonnel()" id="bouton-personnel" class="projet-catégorie">PERSONNEL</button>
+                    <button onclick="showCertif()" id="bouton-certif" class="certif">CERTIFICATIONS</button>
                 </div>
 
                 <div id="projets-blocks-ecole" class="projets-blocks">
@@ -242,8 +265,8 @@
                         </div>
                         <div class="hover-desc">
                             <p>Ce projet avait pour but de créer une plateforme afin de <span>gérer les clients d'un
-                                    garage</span> ainsi que les interventions. Il dispose d'une <span>
-                                    interface client...</p>
+                                    garage</span> ainsi que les interventions. Il dispose... <span>
+                            </p>
                         </div>
                     </div>
 
@@ -254,8 +277,7 @@
                         </div>
                         <div class="hover-desc">
                             <p>Ce projet avait pour but de créer une plateforme afin de <span>gérer les élèves d'un
-                                    établissement</span> ainsi que les classes. Il dispose d'une <span>
-                                    interface...</span></p>
+                                    établissement</span> ainsi que les classes. Il dispose...</p>
                         </div>
                     </div>
 
@@ -265,7 +287,9 @@
                             <h3><span class="p-3 bg-light">Projet <br> auto-école <br> (en cours)</span></h3>
                         </div>
                         <div class="hover-desc">
-                            <p></p>
+                            <p>Avec mon groupe scolaire composé de <span>Louis Lamouche</span>,<span>Valentio
+                                    Pinto</span> et moi même nous sommes
+                                actuellement en train de...</p>
                         </div>
                     </div>
 
@@ -290,7 +314,9 @@
                             <h3><span class="p-3 bg-light">SkillsTouch</span></h3>
                         </div>
                         <div class="hover-desc">
-                            <p></p>
+                            <p>Durant mon alternance au sein de CD2RI je travail sur un <span>prototype</span>
+                                d'<span>application de
+                                    recherche d'emploi...</p>
                         </div>
                     </div>
 
@@ -306,7 +332,7 @@
                         </div>
                         <div class="hover-desc">
                             <p>J'ai réaliser mon propre server web sous ubuntu 20.04 afin de pouvoir publié mes
-                                différents projets et parfaire mes compétences en sécurité...</p>
+                                différents projets et parfaire mes compétences...</p>
                         </div>
                     </div>
 
@@ -317,13 +343,45 @@
                             <h3><span class="p-3 bg-light">Bank Dashboard</span></h3>
                         </div>
                         <div class="hover-desc">
-                            <p>Ce projet avait pour but de créer une plateforme afin de <span>gérer mes revenus</p>
+                            <p>Ce projet avait pour but de créer une plateforme afin de <span>gérer mes revenus...</p>
                         </div>
                     </div>
 
 
                 </div>
 
+                <div id="blocks-certif" class="projets-blocks">
+
+
+                    <div data-aos="zoom-in" class="block block-certif">
+                        <div class="block-htmlcss sub-block"><a target="_blank"
+                                href="documents/certifications/Cértificat Html5-CSS3.pdf">
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div data-aos="zoom-in" class="block block-certif">
+                        <div class="block-securite sub-block">
+                            <a target="_blank" href="documents/certifications/Certificat Sécurité numérique .pdf">
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div data-aos="zoom-in" class="block block-certif">
+                        <div class="block-softskills sub-block">
+                            <a target="_blank" href="documents/certifications/Cértificat Soft Skills.pdf">
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a target="_blank" class="mt-5 tab-comp" href="documents/tableau_synthese_bts_sio.pdf">Mon tableau de
+                    compétences
+                    <u>ici</u></a>
             </div>
         </div>
         <div class="sous-page veille">
@@ -349,22 +407,26 @@
                     </div>
 
 
-                    <div data-aos="zoom-in" onclick="openVeille2()" class="block">
-                        <h3>veille 2</h3>
+                    <div data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#rtx" class="block">
+                        <div class="block-rtx sub-block">
+                            <h3><span class="p-3 bg-light">RTX serie 40XX</span></h3>
+                        </div>
+                        <div class="hover-desc">
+                            <p>Nvidia sort ses cartes graphiques serie 40xx</p>
+                        </div>
                     </div>
-                    <dialog id="veille-2">
-                        <h1>veille 2</h1>
-                        <button onclick="closeVeille2()">Fermer</button>
-                    </dialog>
 
 
-                    <div data-aos="zoom-in" onclick="openVeille3()" class="block">
-                        <h3>veille 3</h3>
+                    <div data-aos="zoom-in" data-bs-toggle="modal" data-bs-target="#droit1" class="block">
+                        <div class="block-droit1 sub-block">
+                            <h3><span class="p-3 bg-light">Résolution d’un contrat de conception de site internet</span>
+                            </h3>
+                        </div>
+                        <div class="hover-desc">
+                            <p>Résolution d’un contrat de conception de site internet pour retard dans la livraison et
+                                dysfonctionnements</p>
+                        </div>
                     </div>
-                    <dialog id="veille-3">
-                        <h1>veille 3</h1>
-                        <button onclick="closeVeille3()">Fermer</button>
-                    </dialog>
 
 
                 </div>
@@ -502,12 +564,12 @@
                             <div id="modal-choix1-ecole1-contenu">
                                 <p>Ce projet avait pour but de créer une plateforme afin de <span>gérer les clients d'un
                                         garage</span> ainsi que les interventions. <br> Il dispose d'une <span>
-                                        interface client</span> ou l'on
-                                    peut appercevoir ses véhicules enregistrés ainsi qu'une <span> interface admin
+                                        interface client</span> où l'on
+                                    peut apercevoir ses véhicules enregistrés ainsi qu'une <span> interface admin
                                     </span> qui nous
-                                    permet <span> d'insérer un nouveau client, son véhicule, un téchicien et de créer
+                                    permet <span> d'insérer un nouveau client, son véhicule, un technicien et de créer
                                         une
-                                        intervention qui les relient tous </span></p>
+                                        intervention qui les relie tous. </span></p>
                             </div>
                             <div id="modal-choix2-ecole1-contenu" class="modal-choix-contenu-g">
 
@@ -544,7 +606,7 @@
                                 <p>- Travail en équipe</p>
                                 <p>- Git (Pour le travail en équipe)</p>
                                 <p>- Trello et Gantt (Pour la planification et distribution des taches)</p>
-                                <p>- Meilleur compréhention de l'architecure MVC</p>
+                                <p>- Meilleur compréhension de l'architecture MVC</p>
                                 <p>- Utilisation de PDO (pour une connexion sécurisée à la BDD)</p>
 
                             </div>
@@ -689,8 +751,8 @@
                             <div id="modal-choix1-ecole2-contenu">
                                 <p>Ce projet avait pour but de créer une plateforme afin de <span>gérer les élèves d'un
                                         établissement</span> ainsi que les classes. <br> Il dispose d'une <span>
-                                        interface client</span> ou l'on
-                                    peut appercevoir la liste des classes,des matières et des élèves enregistrés ainsi
+                                        interface client</span> où l'on
+                                    peut apercevoir la liste des classes, des matières et des élèves enregistrés ainsi
                                     qu'une <span>
                                         interface admin
                                     </span> qui nous
@@ -730,7 +792,7 @@
                                 <p>- Travail en équipe</p>
                                 <p>- Git (Pour le travail en équipe)</p>
                                 <p>- Trello et Gantt (Pour la planification et distribution des taches)</p>
-                                <p>- Meilleur compréhention de l'architecure MVC</p>
+                                <p>- Meilleur compréhension de l'architecture MVC</p>
                                 <p>- Utilisation de PDO (pour une connexion sécurisée à la BDD)</p>
 
                             </div>
@@ -861,22 +923,22 @@
                         </div>
                         <div class="contenu-modal">
                             <div id="modal-choix1-ecole3-contenu">
-                                <p>Avec mon groupe scolaire composé de <span>Louis Lamouche</span> et <span>Valentio
-                                        Pinto</span> et moi même nous sommes
+                                <p>Avec mon groupe scolaire composé de <span>Louis Lamouche</span>,<span> Valentio
+                                        Pinto</span> et moi-même nous sommes
                                     actuellement en train de travailler sur <span>un site d'auto-école</span> afin de le
                                     présenter le
                                     jour de notre épreuve de BTS. <br> Ce projet à pour but de réaliser <span>la vitrine
                                         d'une
-                                        auto école</span> ainsi qu'<span>une interface utilistateur</span> pour ceux
+                                        auto-école</span> ainsi qu'<span>une interface utilisateur</span> pour ceux
                                     ayant un forfait que
-                                    l'auto-école. <br> Grâce a cette interface l'utilistateur pourra consulter son
+                                    l'auto-école. <br> Grâce à cette interface l'utilisateur pourra consulter son
                                     forfait,
-                                    ses heures effectués, son agenda avec ses prochaines heures de conduites, la
+                                    ses heures effectués, son agenda avec ses prochaines heures de conduite, la
                                     possibilité de demander ou annuler des heures et avoir accès à un mini code de la
                                     route afin de s'entrainer. <br> Le site disposera aussi d'<span>une interface
                                         moniteur</span> ou
                                     il
-                                    pourra accépter ou non les demandes de ses élèves ainsi qu'accéder à son agenda.
+                                    pourra accepter ou non les demandes de ses élèves ainsi qu'accéder à son agenda.
                                     <br> Pour finir il y aura <span>une interface Admin</span> permettant d'insérer ou
                                     supprimer un
                                     élève
@@ -920,7 +982,7 @@
                                 <p>- Travail en équipe</p>
                                 <p>- Git (Pour le travail en équipe)</p>
                                 <p>- Trello et Gantt (Pour la planification et distribution des taches)</p>
-                                <p>- Meilleur compréhention de l'architecure MVC</p>
+                                <p>- Meilleur compréhension de l'architecture MVC</p>
                                 <p>- Utilisation de PDO (pour une connexion sécurisée à la BDD)</p>
 
                             </div>
@@ -1027,7 +1089,7 @@
                         <div class="contenu-modal">
                             <div id="modal-choix1-entreprise1-contenu" class="choix1-contenu-g">
                                 <p>Durant mon 3ème mois en alternance au sein de l'association CD2RI j'ai eu l'occasion
-                                    de réaliser la v3 de leur Site Tchilee.fr qui est une agence de voyage en ligne</p>
+                                    de réaliser la v3 de leur Site Tchilee.fr qui est une agence de voyages en ligne</p>
                             </div>
                             <div id="modal-choix2-entreprise1-contenu" class="modal-choix-contenu-g">
                                 <h5>CMS :</h5>
@@ -1054,7 +1116,7 @@
                                 <p>- Utilisation du cms wix version EditorX</p>
                                 <p>- Utilisation du JQUERY pour des fonctions sur l'éditeur de code 'Velo' propre a Wix
                                 </p>
-                                <p>- Réaliser une maquette détaillée d'un site d'agence de voyage</p>
+                                <p>- Réaliser une maquette détaillée d'un site d'agence de voyages</p>
 
                             </div>
                             <div id="modal-choix4-entreprise1-contenu"
@@ -1162,19 +1224,19 @@
                         </div>
                         <div class="contenu-modal">
                             <div id="modal-choix1-entreprise2-contenu">
-                                <p>Durant mon alternance au sein de CD2RI je travail sur un <span>prototype</span>
+                                <p>Durant mon alternance au sein de CD2RI je travaille sur un <span>prototype</span>
                                     d'<span>application de
                                         recherche d'emploi</span> avec une utilisation <span>type Tinder</span>. Vous
                                     pouvez vous inscrire soit
                                     en tant qu'<span>utilisateur</span> soit en tant qu'<span>employeur</span>. Vous
                                     définissez ensuite votre
-                                    recherche (stage,alternance,CDD,CDI) ainsi qu'une liste de savoir faire et savoir
+                                    recherche (stage, alternance, CDD, CDI) ainsi qu'une liste de savoir faire et savoir
                                     être vous correspondant ou correspondant à l'offre d'emploi que vous déposer en tant
-                                    qu'employeur. Des profiles defilleront ensuite basé sur votre critères de recherche
-                                    et vous avez la possibilité de <span>passer ou de liker le profile</span>. Si un
-                                    like à été
-                                    généré des deux cotés cela créer un <span>match</span> et l'utilisateur ainsi que
-                                    l'employeur on
+                                    qu'employeur. Des profils défilleront ensuite basé sur vos critères de recherche
+                                    et vous avez la possibilité de <span>passer ou de liker le profil</span>. Si un
+                                    like a été
+                                    générer des deux cêtés cela crée un <span>match</span> et l'utilisateur ainsi que
+                                    l'employeur ont
                                     la possibilité de <span>discuter</span> pour faire connaissance et potentiellement
                                     définir un
                                     entretien.</p>
@@ -1284,10 +1346,11 @@
                         </div>
                         <div class="contenu-modal">
                             <div id="modal-choix1-personnel1-contenu">
-                                <p>J'ai réalisé mon propre server web à l'aide d'un deuxième ordinateur installé chez
-                                    moi. Ce PC contient une machine virtuel sous ubuntu 20.04 avec LAMP installé dessus.
-                                    Pour rendre se serveur web accessible par tout le monde sur internet j'ai du faire
-                                    la demande au près de mon fournisseur internet d'une adresse ip fixe qui m'a ensuite
+                                <p>J'ai réalisé mon propre serveur web à l'aide d'un deuxième ordinateur installé chez
+                                    moi. Ce PC contient une machine virtuelle sous Ubuntu 20.04 avec LAMP installé
+                                    dessus.
+                                    Pour rendre ce serveur web accessible par tout le monde sur internet j'ai dû faire
+                                    la demande auprès de mon fournisseur internet d'une adresse ip fixe qui m'a ensuite
                                     permis de créer des redirections de ports depuis mon adresse ip vers mon serveur
                                     web.</p>
                             </div>
@@ -1318,15 +1381,15 @@
 
                             </div>
                             <div id="modal-choix3-personnel1-contenu" class="modal-choix-contenu-g">
-                                <p>- Meilleur compréhension et utilisation du terminal sous ubuntu</p>
+                                <p>- Meilleure compréhension et utilisation du terminal sous Ubuntu</p>
                                 <p>- Installation d'un nom de domaine sous apache avec certificat SSL (https)</p>
-                                <p>- Meilleur compréhension des ports en réseau</p>
+                                <p>- Meilleure compréhension des ports en réseau</p>
                                 <p>- Mise en place de "Virtual Host" dans Apache pour avoir plusieurs sites sur un
                                     serveur web</p>
                                 <p>- Installation d'un firewall avec Iptables</p>
-                                <p>- Connexion à distance par clés avec le protocol SSH</p>
+                                <p>- Connexion à distance par clés avec le protocole SSH</p>
                                 <p>- Mise en place de Fail To Ban qui ban une adresse ip temporairement après un certain
-                                    nombres d'échecs de connexion</p>
+                                    nombre d'échecs de connexion</p>
                             </div>
                             <div id="modal-choix4-personnel1-contenu" class="modal-choix-contenu-g">
                                 <div id="carouselServer" class="carousel slide" data-bs-ride="false">
@@ -1421,8 +1484,8 @@
                                 <p>"Bank Dashboard" est le nom de ma première application web réalisé avec Node Js et
                                     certaines librairies. Elle permet de gérer ses revenus et ses dépenses ainsi
                                     qu'avoir certaines statistiques sur son mois comme par exemple le montant total de
-                                    dépense,revenus ou reccurence du mois. Elle dispose aussi d'une courbe montrant
-                                    l'évolution de son solde sur les dernieres transactions ainsi qu'un cammenbert
+                                    dépense, revenus ou récurrence du mois. Elle dispose aussi d'une courbe montrant
+                                    l'évolution de son solde sur les dernières transactions ainsi qu'un camenbert
                                     indiquant dans quelle catégorie nous avons effectué le plus de dépenses.</p>
                                 <br><br>
                                 <a target="_blank" class="modal-a"
@@ -1594,38 +1657,129 @@
                     </div>
                     <div class="modal-body">
                         <div class="d-flex flex-column align-item-center justify-content-center p-5 veille-contenu">
-                            <p><span>G</span>ithub Copilot est une <strong>intelligence artificielle</strong> créee par
+                            <p><span>G</span>ithub Copilot est une <strong>intelligence artificielle</strong> créée par
                                 <strong>GitHub et
                                     OpenAI</strong> dans le but
                                 d'aider les
                                 développeurs. <br> Elle est capable de <strong>générer du code</strong> à partir d'un
                                 commentaire mais
                                 aussi
-                                de faire une <strong>prédiction</strong> de ce que vous voullez potentiellement écrire
+                                de faire une <strong>prédiction</strong> de ce que vous voulez potentiellement écrire
                                 grace au modèle de
-                                Langages <strong>GPT3</strong> développer par OpenAI. <br> Cette AI permet donc la
+                                Langages <strong>GPT3</strong> développé par OpenAI. <br> Cette AI permet donc la
                                 prédiction dans une
                                 <strong>douzaine de Langages</strong> et s'installe sur
                                 certains IDE dont Visual Studio Code. <br> GitHub Copilot est disponible par
                                 <strong>abonnement</strong>
                                 mensuel (9.99$) ou annuel (99$) mais dispose aussi d'une offre <strong>gratuite pour les
                                     étudiants</strong>
-                                Présenter le 29 juin 2021, GitHub Copilot est maintenant disponible pour les
+                                Présenté le 29 juin 2021, GitHub Copilot est maintenant disponible pour les
                                 développeurs depuis le <strong>20 juillet 2021.</strong><br>
                                 Afin d'apprendre à coder Github Copilot s'est entrainé sur plus de 1 milliard de lignes
-                                de code à travers tous les repository github disponible. <br> Afin de valider la
+                                de code à travers tous les repositorys github disponibles. <br> Afin de valider la
                                 proposition de github il suffit de cliquer sur la touche TAB et de laisser github
                                 copilot faire son travail. <br> <strong>Attention</strong> : Github Copilot est encore
                                 en phase de test et peut donc proposer des erreurs de syntaxe ou des erreurs de logique
                             </p>
                             <img class="mx-auto" src="images/copilot/exemple.png" width="80%" alt="">
                             <img class="mx-auto mt-2" src="images/copilot/exemple2.png" width="80%" alt="">
+                            <p class="mt-5"><u>source :</u> <br> <a href="https://github.com/features/copilot">GitHub
+                                    Copilot</a>
+                                <br> <a href="https://fr.wikipedia.org/wiki/GPT-3">Wikipedia GTP3</a>
+                                <br> <a href="https://en.wikipedia.org/wiki/GitHub_Copilot">Wikipedia GithubCopilot</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal RTX -->
+        <div class="modal fade" id="rtx" tabindex="-1" aria-labelledby="rtx" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="rtx">Nvidia sort enfin ses cartes graphiques 40xx</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column align-item-center justify-content-center p-5 veille-contenu">
+                            <p><span>N</span>vidia à sortie pour le moment deux modèles de cartes graphique de la série
+                                40. La nvidia RTX 4090 (1.949 €) et 4080 (1.469 €). <br>
+                                La RTX 4090, sortie le 12 octobre 2022, est équipée de 24 Go de mémoire G6X contre 16
+                                pour la 4080 sortie le 16 novembre 2022 <br>
+                                Bien que toutes deux plus performantes d'un point de vue matériel que la série
+                                précédente des 30xx ce n'est pas ce qui fait la réelle nouveauté de ces cartes. <br>
+                                En effet elles disposent de la nouvelle technologie de Nvidia, le <strong>Deep Learning
+                                    Super Sampling</strong> (DLSS) version 3 qui permet de faire tourner des jeux en 4K
+                                avec un taux de rafraichissement de 120Hz. <br>
+                            </p>
+                            <img class="mx-auto" src="images/Nvidia/dlss.jpg" width="80%" alt="">
+                            <h2 class="mt-4">Mais qu'est ce le DLSS et sa version 3 ?</h2>
+                            <p>Le DLSS est une technologoe d'intelligence artificielle permettant de recréer les images.
+                                <br> Ce processus permet d'alléger la puissance exercée par la carte graphique pour un
+                                rendu tout autant voir meilleur. <br> Grâce au DLSS votre carte graphique peut être
+                                utilisée comme si elle fournissait une résolution de 1080p par exemple alors que cela
+                                sera du 4k
+                                afficher sur votre écran. Tout cela car le DLSS arrive à créer des pixels pour agrandir
+                                l'image en temps réel. Ce système permet donc à la carte de se reposée et de se
+                                concentré surtout sur le nom de FPS (images par seconde) pour fournir l'expérience la
+                                plus fluide possible. <br>
+
+                                Le DLSS 3 est donc la version améliorée de cette technologie. Malheureusement elle n'est
+                                compatible que sur les séries 40xx de Nvidia alors que le DLSS 2.0 lui l'était sur les
+                                20xx et 30xx.
+                            </p>
                             <p class="mt-5"><u>source :</u> <br> <a
-                                    href="https://github.com/features/copilot">https://github.com/features/copilot</a>
+                                    href="https://www.nvidia.com/fr-fr/geforce/graphics-cards/40-series/">Nvidia
+                                    RTX</a>
                                 <br> <a
-                                    href="https://fr.wikipedia.org/wiki/GPT-3">https://fr.wikipedia.org/wiki/GPT-3</a>
-                                <br> <a
-                                    href="https://en.wikipedia.org/wiki/GitHub_Copilot">https://en.wikipedia.org/wiki/GitHub_Copilot</a>
+                                    href="https://www.jeuxvideo.com/news/1679385/rtx-4080-et-rtx-4090-nvidia-m-a-rendu-fou-les-joueurs-choques-par-les-performances-du-dlss-3.htm">Jeuxvidéo.com</a>
+                                <br>
+                                <a
+                                    href="https://www.pocket-lint.com/fr-fr/ordinateurs/actualites/nvidia/155961-quest-ce-que-lapprentissage-en-profondeur-des-parametres-graphiques-de-super-echantillonnage-dlss-ai">Pocket-lint</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal Droit1 -->
+        <div class="modal fade" id="droit1" tabindex="-1" aria-labelledby="droit1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="droit1">Résolution d’un contrat de conception de site internet
+                            pour retard dans la livraison et dysfonctionnements</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column align-item-center justify-content-center p-5 veille-contenu">
+                            <p><u>Type :</u> arrêt <br><br>
+                                <u>Date :</u> 29 novembre 2016 <br><br>
+                                <u>Acteurs :</u> non précisés <br><br>
+                                <u>Juridiction :</u> Cour d'appel de Grenoble <br><br>
+                                <u>Faits :</u> Un contrat de conception de site internet a été passé entre un
+                                prestataire et un consommateur. <br><br>
+                                <u>Décision :</u> La conception du site faisait face à un retard anormal et
+                                des dysfonctionnements persistants. En effet, le devis accepté par le client ne
+                                mentionnait aucune date de livraison cependant, cela impliquait de façon implicite un
+                                délai raisonnable. Après une année suivant l’acceptation dudit devis sans réception du
+                                livrable, le contrat a été résolu, aux torts exclusifs du prestataire. <br><br>
+                                <u>Sanctions :</u> Le prestataire a été condamné à payer 2000 euros de dommages
+                                et intérêts à son client. <br><br> <strong>arrêt non publié</strong>
+                            </p>
+                            <p class="mt-5"><u>source :</u> <br> <a
+                                    href="https://feral.law/archives/resolution-dun-contrat-de-conception-de-site-internet-pour-retard-dans-la-livraison-et-dysfonctionnements/">Feral.law</a>
                             </p>
                         </div>
                     </div>

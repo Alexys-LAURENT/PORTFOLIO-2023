@@ -23,6 +23,46 @@ function closemobilenav() {
     close.style.display = 'none';
 }
 
+function scrollToApropos() {
+    document.getElementById('APROPOS').scrollIntoView({ behavior: 'smooth' });
+    menu.style.display = 'none';
+    document.body.style.overflow = 'initial';
+    open.style.display = 'block';
+    close.style.display = 'none';
+}
+
+function scrollToAlternance() {
+    document.getElementById('ALTERNANCE-TITLE').scrollIntoView({ behavior: 'smooth' });
+    menu.style.display = 'none';
+    document.body.style.overflow = 'initial';
+    open.style.display = 'block';
+    close.style.display = 'none';
+}
+
+function scrollToProjets() {
+    document.getElementById('PROJETS').scrollIntoView({ behavior: 'smooth' });
+    menu.style.display = 'none';
+    document.body.style.overflow = 'initial';
+    open.style.display = 'block';
+    close.style.display = 'none';
+}
+
+function scrollToContact() {
+    document.getElementById('CONTACT').scrollIntoView({ behavior: 'smooth' });
+    menu.style.display = 'none';
+    document.body.style.overflow = 'initial';
+    open.style.display = 'block';
+    close.style.display = 'none';
+}
+
+function scrollToVeille() {
+    document.getElementById('VEILLE').scrollIntoView({ behavior: 'smooth' });
+    menu.style.display = 'none';
+    document.body.style.overflow = 'initial';
+    open.style.display = 'block';
+    close.style.display = 'none';
+}
+
 
 
 
@@ -57,6 +97,15 @@ window.addEventListener("mousemove", handleMouseMove = (event) => {
     ref.style.left = x - scrollLeft + 'px';
     ref.style.top = y - scrollTop + 'px';
 });
+
+window.addEventListener('resize', allowscroll);
+
+function allowscroll() {
+    let viewportWidth = window.innerWidth;
+    if (viewportWidth >= 765) {
+        document.body.style.overflow = 'initial';
+    }
+}
 
 
 

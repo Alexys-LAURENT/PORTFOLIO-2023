@@ -1,15 +1,18 @@
 const projetsEcole = document.getElementById('projets-blocks-ecole');
 const projetsEntreprise = document.getElementById('projets-blocks-entreprise');
 const projetsPersonnel = document.getElementById('projets-blocks-personnel');
+const certif = document.getElementById('blocks-certif');
 const boutonEcole = document.getElementById('bouton-ecole');
 const boutonEntreprise = document.getElementById('bouton-entreprise');
 const boutonPersonnel = document.getElementById('bouton-personnel');
+const bouttonCertif = document.getElementById('bouton-certif');
 
 
 function showEcole() {
     projetsEcole.style.display = 'flex';
     projetsEntreprise.style.display = 'none';
     projetsPersonnel.style.display = 'none';
+    certif.style.display = 'none';
     boutonEcole.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
     boutonEntreprise.style.backgroundColor = 'transparent';
     boutonPersonnel.style.backgroundColor = 'transparent';
@@ -19,6 +22,7 @@ function showEntreprise() {
     projetsEntreprise.style.display = 'flex';
     projetsEcole.style.display = 'none';
     projetsPersonnel.style.display = 'none';
+    certif.style.display = 'none';
     boutonEntreprise.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
     boutonEcole.style.backgroundColor = 'transparent';
     boutonPersonnel.style.backgroundColor = 'transparent';
@@ -28,9 +32,21 @@ function showPersonnel() {
     projetsPersonnel.style.display = 'flex';
     projetsEcole.style.display = 'none';
     projetsEntreprise.style.display = 'none';
+    certif.style.display = 'none';
     boutonPersonnel.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
     boutonEcole.style.backgroundColor = 'transparent';
     boutonEntreprise.style.backgroundColor = 'transparent';
+}
+
+function showCertif() {
+    certif.style.display = 'flex';
+    projetsEcole.style.display = 'none';
+    projetsEntreprise.style.display = 'none';
+    projetsPersonnel.style.display = 'none';
+    boutonEcole.style.backgroundColor = 'transparent';
+    boutonEntreprise.style.backgroundColor = 'transparent';
+    boutonPersonnel.style.backgroundColor = 'transparent';
+    bouttonCertif.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
 }
 
 
