@@ -1205,6 +1205,10 @@ nav:hover {
     background-image: url('images/Certifications/soft-skills.png');
 }
 
+.block-debutezReact {
+    background-image: url('images/Certifications/debutezReact.png');
+}
+
 .modal-a {
     color: black;
     text-decoration: underline;
